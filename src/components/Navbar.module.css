@@ -1,0 +1,174 @@
+/* Common navbar styles */
+.navbar {
+  position: relative;
+  /* Lively gradient background and subtle shadow */
+  background: linear-gradient(90deg, var(--color-main-bg) 0%, #bd800f 100%);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Desktop Navigation Layout */
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoImg {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logoImg:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Options on Desktop */
+.menuOptions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-forrest-green);
+  transition: transform 0.3s, color 0.3s;
+}
+
+.navLink:hover {
+  color: var(--color-darktractoa);
+  transform: scale(1.1);
+}
+
+/* Contact number styling */
+.contactNumber {
+  font-size: 1rem;
+  color: var(--color-darktractoa);
+  font-weight: bold;
+}
+
+/* Mobile Navigation Styles */
+.mobileHeader {
+  display: none;
+}
+
+/* Updated Mobile Header: Logo on left, hamburger on right */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .logoImg {
+    height: 60px;
+  }
+}
+
+/* Hamburger button */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  padding: 0;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-forrest-green);
+  border-radius: 2px;
+}
+
+/* Mobile Menu Overlay */
+.mobileMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-main-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-darktractoa);
+}
+
+.mobileMenuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.mobileNavLink {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color-forrest-green);
+  transition: color 0.3s;
+}
+
+.mobileNavLink:hover {
+  color: var(--color-darktractoa);
+}
+
+/* Contact number styling for mobile overlay */
+.contactNumberMobile {
+  font-size: 1.2rem;
+  color: var(--color-darktractoa);
+  font-weight: bold;
+}
+
+/* New styles for transparent navbar on Home page */
+.transparent {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.transparent .navLink {
+  color: white !important;
+}
+
+.transparent .navLink:hover {
+  color: #cccccc !important;
+}
+
+.transparent .contactNumber {
+  color: white !important;
+}
+
+.transparent .mobileNavLink {
+  color: white !important;
+}
+
+.transparent .mobileNavLink:hover {
+  color: #cccccc !important;
+}
+
+.transparent .closeButton {
+  color: white !important;
+}

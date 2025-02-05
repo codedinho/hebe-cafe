@@ -1,0 +1,19 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.aboutHeader {
+  font-size: 5rem;
+  font-family: var(--font-secondary);
+  color: var(--color-darktractoa);
+}
+
+.aboutDescription {
+  font-size: 1.5rem;
+  font-family: var(--font-description);
+  color: var(--color-forrest-green);
+}

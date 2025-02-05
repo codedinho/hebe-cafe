@@ -1,0 +1,115 @@
+.footerContainer {
+  background-color: var(--color-forrest-green);
+  color: var(--color-main-bg);
+  padding: 3rem 2rem;
+  font-family: sans-serif;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.logoSection {
+  margin-bottom: 1rem;
+}
+.logo {
+  max-width: 150px;
+  width: 100%;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Info Section */
+.infoSection {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.infoText {
+  font-family: var(--font-description);
+  font-size: 1.2rem;
+  color: var(--color-main-bg);
+  margin-bottom: 1rem;
+}
+
+/* Social Media Section */
+.socialMediaSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialIcon {
+  color: var(--color-main-bg);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Links Section */
+.linksSection {
+  text-align: left;
+}
+.linksHeader {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.linkList li {
+  margin-bottom: 0.5rem;
+}
+.linkList li a {
+  color: var(--color-main-bg);
+  font-family: var(--font-description);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.linkList li a:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+  .footerContent {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .logoSection,
+  .infoSection,
+  .linksSection {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .infoSection {
+    text-align: left;
+  }
+} 
