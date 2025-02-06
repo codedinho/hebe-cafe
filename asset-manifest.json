@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "https://codedinho.github.io/static/css/main.34d5d54b.css",
-    "main.js": "https://codedinho.github.io/static/js/main.5035ed1e.js",
+    "main.js": "https://codedinho.github.io/static/js/main.7278372a.js",
     "static/media/Piepie-W01-Regular.otf": "https://codedinho.github.io/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
     "static/media/Piepie-W01-Regular.ttf": "https://codedinho.github.io/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
     "static/media/copperplate-cc.heavy.otf": "https://codedinho.github.io/static/media/copperplate-cc.heavy.9c25d5dc0cf2028c027d.otf",
     "static/media/copperplate-cc.bold.otf": "https://codedinho.github.io/static/media/copperplate-cc.bold.48559696f0b224f41cb3.otf",
     "index.html": "https://codedinho.github.io/index.html",
     "main.34d5d54b.css.map": "https://codedinho.github.io/static/css/main.34d5d54b.css.map",
-    "main.5035ed1e.js.map": "https://codedinho.github.io/static/js/main.5035ed1e.js.map"
+    "main.7278372a.js.map": "https://codedinho.github.io/static/js/main.7278372a.js.map"
   },
   "entrypoints": [
     "static/css/main.34d5d54b.css",
-    "static/js/main.5035ed1e.js"
+    "static/js/main.7278372a.js"
   ]
 }
