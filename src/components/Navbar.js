@@ -7,6 +7,12 @@ function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Choose the appropriate logo based on the current route.
+  const logoSrc =
+    location.pathname === "/"
+      ? `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Oyster.png`
+      : `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Main.png`;
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
   };
@@ -43,24 +49,28 @@ function Navbar() {
     >
       {/* Desktop Navigation */}
       <div className={styles.desktopMenu}>
-        {/* Logo on the left */}
+        {/* Logo container always exists */}
         <div className={styles.navbarLogo}>
-          <Link to="/">
-            <img
-              src="/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Main.svg"
-              alt="Hebe Cafe Logo"
-              className={styles.logoImg}
-            />
-          </Link>
+          {location.pathname !== "/" ? (
+            <Link to="/">
+              <img
+                src={logoSrc}
+                alt="Hebe Cafe Logo"
+                className={styles.logoImg}
+              />
+            </Link>
+          ) : (
+            <div className={styles.placeholder}></div>
+          )}
         </div>
         {/* Navigation options on the right */}
         <div className={styles.menuOptions}>
-          <Link to="/menu" className={styles.navLink}>
-            Menu
-          </Link>
           <a href="#about" onClick={handleAboutClick} className={styles.navLink}>
             About
           </a>
+          <Link to="/menu" className={styles.navLink}>
+            Menu
+          </Link>
           <Link to="/events" className={styles.navLink}>
             Events
           </Link>
@@ -73,15 +83,18 @@ function Navbar() {
 
       {/* Mobile Navigation Header */}
       <div className={styles.mobileHeader}>
-        {/* Mobile: Logo on the left */}
         <div className={styles.mobileLogo}>
-          <Link to="/">
-            <img
-              src="/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Main.svg"
-              alt="Hebe Cafe Logo"
-              className={styles.logoImg}
-            />
-          </Link>
+          {location.pathname !== "/" ? (
+            <Link to="/">
+              <img
+                src={logoSrc}
+                alt="Hebe Cafe Logo"
+                className={styles.logoImg}
+              />
+            </Link>
+          ) : (
+            <div className={styles.placeholder}></div>
+          )}
         </div>
         {/* Mobile: Hamburger on the right */}
         <button className={styles.hamburger} onClick={toggleMobileMenu}>

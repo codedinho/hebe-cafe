@@ -1,0 +1,92 @@
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.header {
+  text-align: left;
+  font-size: 4rem;
+  color: var(--color-forrest-green);
+  font-family: var(--font-secondary);
+}
+
+.infoText {
+  font-size: 1.2rem;
+  color: var(--color-forrest-green);
+  font-family: var(--font-description);
+  font-weight: 100;
+  margin-bottom: 2rem;
+  margin-top: -0.8rem;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.locationImage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.infoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactDetail {
+  font-size: 1.1rem;
+  color: var(--color-forrest-green);
+  font-family: var(--font-description);
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.contactDetailHighlighted {
+  font-weight: 100;
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+  margin-top: 0.2rem;
+}   
+
+.contactDetailValue {
+  font-weight: 100;
+  font-size: 1.3rem;
+  font-style: italic;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .imageSection {
+    margin-bottom: 1.5rem;
+  }
+  
+    .header {
+        font-size: 2.5rem;
+    }
+} 

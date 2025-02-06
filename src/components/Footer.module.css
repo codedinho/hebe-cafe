@@ -57,6 +57,7 @@
 /* Links Section */
 .linksSection {
   text-align: left;
+  display: block;
 }
 .linksHeader {
   font-size: 1.2rem;
@@ -86,12 +87,13 @@
 }
 
 /* Footer Bottom */
-.footerBottom {
+.footerBottom p {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding-top: 1rem;
   margin-top: 1rem;
   font-size: 0.9rem;
+  color: var(--color-main-bg);
 }
 
 /* Media Query for Larger Screens */
@@ -111,5 +113,24 @@
   
   .infoSection {
     text-align: left;
+  }
+
+  .linksSection {
+    display: hidden;
+  }
+} 
+
+/* Media Query for Larger Screens */
+@media (max-width: 768px) {
+  .linksSection {
+    display: none;
+  }
+
+  .socialIcon {
+    display: flex;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 } 

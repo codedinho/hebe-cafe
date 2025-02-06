@@ -2,10 +2,11 @@
 .navbar {
   position: relative;
   /* Lively gradient background and subtle shadow */
-  background: linear-gradient(90deg, var(--color-main-bg) 0%, #bd800f 100%);
+  background: var(--color-main-bg);
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  position: sticky;
 }
 
 /* Desktop Navigation Layout */
@@ -16,7 +17,7 @@
 }
 
 .logoImg {
-  height: 80px;
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
@@ -67,7 +68,7 @@
     padding: 1rem 2rem;
   }
   .logoImg {
-    height: 60px;
+    height: 40px;
   }
 }
 
@@ -172,3 +173,22 @@
 .transparent .closeButton {
   color: white !important;
 }
+
+.transparent .bar {
+  background-color: white !important;
+}
+
+/* Example adjustments */
+.navbarLogo,
+.mobileLogo {
+  min-width: 150px; /* Adjust this value as needed */
+  display: flex;
+  align-items: center;
+}
+
+/* This placeholder ensures the reserved space is maintained */
+.placeholder {
+  width: 100%;
+  height: 40px; /* Same as the logo's height */
+}
+
