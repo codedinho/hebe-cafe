@@ -16,7 +16,7 @@ function Home() {
       <div className={styles.hero}>
         <img
           className={styles.heroLogo}
-          src="/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg"
+          src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg"}
           alt="Hebe Cafe Logo"
         />
         <button onClick={scrollToAbout} className={styles.scrollDown}>

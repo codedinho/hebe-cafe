@@ -7,7 +7,7 @@ function Contact() {
       <div className={styles.content}>
         <div className={styles.imageSection}>
           <img
-            src="/images/location-photo.png" // Replace with your actual location image path
+            src={process.env.PUBLIC_URL + "/images/location-photo.png"}
             alt="Our Location"
             className={styles.locationImage}
           />

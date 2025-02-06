@@ -14,7 +14,7 @@ function EventsBanner() {
           <div className={styles.card} key={`${event.id}-${index}`}>
             <div className={styles.imageContainer}>
               <img
-                src={event.image}
+                src={process.env.PUBLIC_URL + event.image}
                 alt={event.header}
                 className={styles.cardImage}
               />
