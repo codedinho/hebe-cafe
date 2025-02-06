@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hebe-cafe/static/css/main.449eb2ae.css",
-    "main.js": "/hebe-cafe/static/js/main.41567daf.js",
-    "static/media/cafe-stock-image.jpg": "/hebe-cafe/static/media/cafe-stock-image.02ea6bbd4552a85ca9b4.jpg",
-    "static/media/Piepie-W01-Regular.otf": "/hebe-cafe/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
-    "static/media/Piepie-W01-Regular.ttf": "/hebe-cafe/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
-    "static/media/copperplate-cc.heavy.otf": "/hebe-cafe/static/media/copperplate-cc.heavy.9c25d5dc0cf2028c027d.otf",
-    "static/media/copperplate-cc.bold.otf": "/hebe-cafe/static/media/copperplate-cc.bold.48559696f0b224f41cb3.otf",
-    "index.html": "/hebe-cafe/index.html",
-    "main.449eb2ae.css.map": "/hebe-cafe/static/css/main.449eb2ae.css.map",
-    "main.41567daf.js.map": "/hebe-cafe/static/js/main.41567daf.js.map"
+    "main.css": "https://codedinho.github.io/hebe-cafe/static/css/main.6605b9ae.css",
+    "main.js": "https://codedinho.github.io/hebe-cafe/static/js/main.43731e0d.js",
+    "static/media/cafe-stock-image.jpg": "https://codedinho.github.io/hebe-cafe/static/media/cafe-stock-image.02ea6bbd4552a85ca9b4.jpg",
+    "static/media/Piepie-W01-Regular.otf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
+    "static/media/Piepie-W01-Regular.ttf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
+    "static/media/copperplate-cc.heavy.otf": "https://codedinho.github.io/hebe-cafe/static/media/copperplate-cc.heavy.9c25d5dc0cf2028c027d.otf",
+    "static/media/copperplate-cc.bold.otf": "https://codedinho.github.io/hebe-cafe/static/media/copperplate-cc.bold.48559696f0b224f41cb3.otf",
+    "index.html": "https://codedinho.github.io/hebe-cafe/index.html",
+    "main.6605b9ae.css.map": "https://codedinho.github.io/hebe-cafe/static/css/main.6605b9ae.css.map",
+    "main.43731e0d.js.map": "https://codedinho.github.io/hebe-cafe/static/js/main.43731e0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.449eb2ae.css",
-    "static/js/main.41567daf.js"
+    "static/css/main.6605b9ae.css",
+    "static/js/main.43731e0d.js"
   ]
 }
