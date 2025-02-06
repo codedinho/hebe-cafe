@@ -25,6 +25,22 @@
   transform: scale(1.05);
 }
 
+.logoImgSmall {
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.logoImgSmall:hover {
+  transform: scale(1.05);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+
 /* Navigation Options on Desktop */
 .menuOptions {
   display: flex;
@@ -57,7 +73,7 @@
 }
 
 /* Updated Mobile Header: Logo on left, hamburger on right */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .desktopMenu {
     display: none;
   }
@@ -110,11 +126,11 @@
 
 .closeButton {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 45px;
+  right: 56px;
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   color: var(--color-darktractoa);
 }
@@ -190,5 +206,15 @@
 .placeholder {
   width: 100%;
   height: 40px; /* Same as the logo's height */
+}
+
+.active {
+  color: #ff6600; /* Change to your desired accent */
+  border-bottom: 2px solid #ff6600;
+}
+
+/* For non-home pages, style the hamburger toggle bars with var(--color-main-bg) */
+.navbar:not(.transparent) .bar {
+  background-color: var(--color-main-bg) !important;
 }
 

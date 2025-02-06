@@ -1,184 +1,205 @@
-/* Wrapper limited to 1200px with centered content */
+/* Updated styling for a cleaner, modern look */
+
+/* Wrapper centers content with a light neutral background */
 .eventsWrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  background-color: var(--color-main-bg);
+  overflow-x: hidden; /* Prevents horizontal overflow from animated elements */
 }
 
-/* Header Section Styles */
+/* Header Section Styles – left aligned for a clean feel */
 .eventsHeader {
-  text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
-    font-size: 3rem;
-    font-family: var(--font-secondary);
-    color: var(--color-darktractoa);
-    font-weight: 100;
+  font-size: 3rem;
+  color: var(--color-darktractoa);
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle row with subtitle text and toggle icons on the right */
+.subtitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1.2rem;
   color: var(--color-forrest-green);
-  font-family: var(--font-description);
-  margin-bottom: 1rem;
-  font-weight: bold
+  margin: 0;
 }
 
-/* Description paragraph below the header */
-.description {
-  margin-bottom: 2.5rem;
-}
-
-.descriptionText {
-  font-size: 1.1rem;
-  color: var(--color-forrest-green-damper);
-  font-family: var(--font-description);
-  text-align: left;
-}
-
-/* Decorative icon row */
-.iconRow {
+/* Container for the view toggle icons */
+.viewToggleContainer {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.viewToggleIcon {
+  background: none;
+  border: none;
+  color: var(--color-forrest-green);
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.viewToggleIcon:hover {
+    color: var(--color-darktractoa);
+}
+
+.activeToggle {
   color: var(--color-darktractoa);
 }
 
-/* Grid container for event cards - 3 per row on desktop */
+/* Grid container for event cards */
 .eventsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
-/* Individual card styling */
+/* Individual card styling (grid view) */
 .card {
-  border-radius: 30px;
+  background-color: var(--color-da);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image container for the overlay effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image container for grid card */
 .imageContainer {
   position: relative;
 }
 
-/* Wide card image with 16:9 ratio */
 .cardImage {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  max-width: 100%;
 }
 
-/* Big ticket icon overlay on image */
+/* Ticket icon overlay on grid image */
 .ticketOverlay {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 10px;
   color: var(--color-main-bg);
   padding: 0.5rem;
   border-radius: 50%;
   font-size: 2.5rem;
-  rotate: 30deg;
+  transform: rotate(15deg);
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Card content area */
-.cardContent {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: var(--color-main-bg);
-}
-
-/* Wrapper for card header with icon */
-.cardHeaderWrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Event icon style in header */
-.eventIcon {
-  font-size: 1.5rem;
+.ticketOverlaySoldOut,
+.ticketIconSoldOut {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   color: var(--color-darktractoa);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  transform: rotate(15deg);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Card header */
-.cardHeader {
-  font-size: 1.2rem;
+.timeOverlayEventClosed {
+  color: var(--color-forrest-green-damper);
+  text-decoration: line-through;
+}
+/* Text overlay for grid view */
+.timeOverlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--color-main-bg);
   color: var(--color-forrest-green);
   font-family: var(--font-description);
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
   font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Date styling */
+/* Card content area for grid view */
+.cardContent {
+  padding: 1.5rem;
+  padding-top: 0.7rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  font-size: 1.2rem;
+  color: var(--color-darktractoa);
+  margin-bottom: 0.2rem;
+}
+
 .cardDate {
   font-size: 0.9rem;
   color: var(--color-forrest-green);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   display: flex;
   align-items: center;
+  font-weight: bold;
   gap: 0.3rem;
-  line-height: 1.2rem;
 }
 
-.dateIcon {
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
-}
-
-/* Event description within the card */
+/* Clamp the card description to 3 lines with ellipsis in grid view */
 .cardDescription {
   font-size: 1rem;
   color: var(--color-forrest-green-damper);
+  line-height: 1.6;
   flex: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  
 }
 
-/* Container for the small ticket icon link */
-.ticketIconContainer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Clean ticket icon styled as a circle */
-.ticketIconLink {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--color-darktractoa);
-  color: var(--color-main-bg);
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  font-size: 1.5rem;
-}
-
-.ticketIconText {
-  font-size: 1rem;
+/* See More button styling for grid view */
+.seeMoreButton {
+  background: none;
+  border: none;
   color: var(--color-forrest-green);
+  cursor: pointer;
+  align-self: flex-start;
   font-weight: bold;
-  margin-right: 0.3rem;
-  align-self: center;
-  font-family: var(--font-description);
+  font-size: 0.8rem;
+  margin-left: -0.4rem;
+  margin-bottom: 0.5rem;
 }
 
-.ticketIconLink:hover {
-  background-color: var(--color-forrest-green);
-  color: var(--color-main-bg);
-}
+/* See More button styling for grid view */
+.seeMoreButton:hover {
+    color: var(--color-darktractoa);
+  }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -186,20 +207,233 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+  
 @media (max-width: 600px) {
   .eventsContainer {
     grid-template-columns: 1fr;
   }
   .cardContent {
-    padding: 0.75rem;
+    padding: 1rem;
   }
   .cardHeader {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .ticketIconLink {
     width: 35px;
     height: 35px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-} 
+  .title {
+    font-size: 2rem;
+    font-family: var(--font-secondary);
+    color: var(--color-darktractoa);
+    font-weight: 100;
+  }
+}
+
+/* -------------------- Big Card View (No hover overlay) -------------------- */
+
+/* In big view, display posts in one column */
+.bigView {
+  grid-template-columns: 1fr;
+}
+
+/* Big card container */
+.bigCard {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.bigCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Container for the image (big view) */
+.bigImageContainer {
+  display: block;
+}
+
+/* Big card image styling */
+.bigCardImage {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Content area for big view: placed under the image */
+.bigCardContent {
+  padding: 1.5rem;
+  background-color: var(--color-da);
+  text-align: left;
+}
+
+/* Big card header & details */
+.bigCardHeader {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 100;
+  font-family: var(--font-secondary);
+  color: var(--color-darktractoa);
+}
+
+.bigCardDate {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-forrest-green);
+}
+
+.bigCardDescription {
+    font-size: 1rem;
+    color: var(--color-forrest-green-damper);
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Ticket button for big view */
+.ticketButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-forrest-green);
+  color: var(--color-main-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.ticketButton:hover {
+  background-color: var(--color-darktractoa);
+  color: var(--color-main-bg);
+}
+
+/* Sold Out badge for big view */
+.soldOutBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-darktractoa);
+  color: var(--color-main-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* -------------------- Animation Classes -------------------- */
+
+.hidden {
+  opacity: 0;
+}
+
+.visibleLeft {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.visibleRight {
+  animation: slideInFromRight 0.5s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* -------------------- Services Banner -------------------- */
+.servicesBanner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.serviceIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--color-forrest-green);
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.serviceIcon:hover {
+  color: var(--color-darktractoa);
+}
+
+@media (max-width: 600px) {
+  .serviceIcon {
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------- Load More Container & Spinner -------------------- */
+.loadMoreContainer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.spinner {
+  font-size: 2rem;
+  color: var(--color-forrest-green);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------- Load More Button -------------------- */
+.loadMoreButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-forrest-green);
+  color: var(--color-main-bg);
+  font-family: var(--font-secondary);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 100;
+  transition: background-color 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: var(--color-darktractoa);
+}

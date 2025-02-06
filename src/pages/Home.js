@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./Home.module.css";
 import About from "../components/About";
 
@@ -10,6 +10,12 @@ function Home() {
       aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (window.location.hash === "#about" && aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div className={styles.home}>

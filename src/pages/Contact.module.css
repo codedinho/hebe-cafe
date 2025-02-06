@@ -1,5 +1,5 @@
 .contactContainer {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 3rem;
   padding-top: 5rem;
@@ -81,11 +81,40 @@
     text-align: left;
   }
 
+  /* Set the infoSection to always come first */
+  .infoSection {
+    order: 1;
+  }
+  
+  /* Set the imageSection to come last */
   .imageSection {
+    order: 2;
     margin-bottom: 1.5rem;
   }
   
-    .header {
-        font-size: 2.5rem;
-    }
+  .header {
+    font-size: 2rem;
+  }
+
+  .contactContainer {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* -------------------- Animation Styles -------------------- */
+
+.animateIn {
+  animation: fadeInUp 0.75s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 } 

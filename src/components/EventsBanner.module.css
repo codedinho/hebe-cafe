@@ -4,7 +4,7 @@
   overflow: hidden;
   background: var(--color-main-bg);
   display: flex;
-  max-width: 1150px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
   margin-top: 2.5rem;
@@ -20,7 +20,7 @@
   bottom: 0;
   pointer-events: none; /* so it doesn't interfere with interactions */
   box-shadow: inset 25px -10px 10px var(--color-main-bg),
-              inset 25px 10px 10px var(--color-main-bg);
+              inset -25px 10px 10px var(--color-main-bg);
   z-index: 2; /* This should be greater than the z-index of children if needed */
 }
 

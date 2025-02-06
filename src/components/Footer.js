@@ -1,9 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Helper to scroll to the top of the page smoothly
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Updated About click handler: scrolls to #about if on home
+  // Otherwise navigates to home, then scrolls to #about, plus scrolls to top.
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for the home page to mount before scrolling.
+      setTimeout(() => {
+        const aboutSection = document.getElementById("about");
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    // Scroll to top of the page after navigating
+    scrollToTop();
+  };
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
@@ -46,16 +77,16 @@ function Footer() {
           <h3 className={styles.linksHeader}>Quick Links</h3>
           <ul className={styles.linkList}>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={handleAboutClick}>About</Link>
             </li>
             <li>
-              <Link to="/menu">Menu</Link>
+              <Link to="/menu" onClick={scrollToTop}>Menu</Link>
             </li>
             <li>
-              <Link to="/events">Events</Link>
+              <Link to="/events" onClick={scrollToTop}>Events</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={scrollToTop}>Contact</Link>
             </li>
           </ul>
         </div>

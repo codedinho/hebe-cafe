@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 function Contact() {
   return (
-    <div className={styles.contactContainer}>
+    <div className={`${styles.contactContainer} ${styles.animateIn}`}>
       <div className={styles.content}>
         <div className={styles.imageSection}>
           <img
@@ -14,11 +14,11 @@ function Contact() {
           />
         </div>
         <div className={styles.infoSection}>
-          <h1 className={styles.header}>Contact Us!</h1>
-
+          <h1 className={styles.header}>
+            Contact Us!
+          </h1>
           <div className={styles.infoText}>
-            If you have any questions or feedback, feel free to reach out to
-            us.
+            If you have any questions or feedback, feel free to reach out to us.
           </div>
           <div className={styles.contactDetail}>
             <FaEnvelope className={styles.contactIcon} />
