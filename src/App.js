@@ -18,14 +18,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    return (
-      <div style={{ textAlign: "center", padding: "2rem" }}>
-        <h1>Loading...</h1>
-      </div>
-    );
-  }
-
   return (
     <Layout>
       <Routes>
