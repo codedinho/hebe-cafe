@@ -7,16 +7,6 @@ import Events from "./pages/Events";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // simulate a loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <Layout>

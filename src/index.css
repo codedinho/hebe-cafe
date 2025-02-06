@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Copperplate';
-  src: url('/public/fonts/copperplate-cc.bold.otf') format('opentype'),
-       url('/public/fonts/copperplate-cc.heavy.otf') format('truetype');
+  src: url('./fonts/copperplate-cc.bold.otf') format('opentype'),
+       url('./fonts/copperplate-cc.heavy.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PiePie Regular';
-  src: url('/public/fonts/Piepie-W01-Regular.otf') format('opentype'),
-       url('/public/fonts/Piepie-W01-Regular.ttf') format('truetype');
+  src: url('./fonts/Piepie-W01-Regular.otf') format('opentype'),
+       url('./fonts/Piepie-W01-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

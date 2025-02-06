@@ -9,7 +9,11 @@ function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logoSection}>
           {/* Update src to your actual logo path */}
-          <img src="/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg" alt="Hebe Cafe Logo" className={styles.logo} />
+          <img
+            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg"}
+            alt="Hebe Cafe Logo"
+            className={styles.logo}
+          />        
         </div>
         <div className={styles.infoSection}>
           <h3 className={styles.linksHeader}>Address</h3>
