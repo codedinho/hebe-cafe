@@ -46,7 +46,7 @@
 }
 
 .aboutDescription {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-family: var(--font-description);
   color: var(--color-forrest-green);
 }
@@ -69,7 +69,7 @@
 
 .reviewText {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--color-forrest-green);
   font-family: var(--font-description);
   margin-top: 1rem;

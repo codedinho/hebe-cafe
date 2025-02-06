@@ -11,7 +11,7 @@ function Navbar() {
   const logoSrc =
     location.pathname === "/"
       ? `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Oyster.png`
-      : `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Main.png`;
+      : `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Oyster.png`;
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);

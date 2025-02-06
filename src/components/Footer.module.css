@@ -1,7 +1,7 @@
 .footerContainer {
-  background-color: var(--color-forrest-green);
+  background-color: #fdefd3;
   color: var(--color-main-bg);
-  padding: 3rem 2rem;
+  padding-top: 3rem;
   font-family: sans-serif;
 }
 
@@ -21,7 +21,7 @@
 .logo {
   max-width: 150px;
   width: 100%;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.4));
 }
 
 /* Info Section */
@@ -32,8 +32,8 @@
 
 .infoText {
   font-family: var(--font-description);
-  font-size: 1.2rem;
-  color: var(--color-main-bg);
+  font-size: 1.1rem;
+  color: var(--color-forrest-green);
   margin-bottom: 1rem;
 }
 
@@ -45,13 +45,13 @@
 }
 
 .socialIcon {
-  color: var(--color-main-bg);
-  font-size: 1.5rem;
+  color: var(--color-forrest-green);
+  font-size: 2.5rem;
   transition: color 0.3s ease;
 }
 
 .socialIcon:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-darktractoa);
 }
 
 /* Links Section */
@@ -60,11 +60,12 @@
   display: block;
 }
 .linksHeader {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: var(--color-forrest-green);
 }
 .linkList {
   list-style: none;
@@ -75,7 +76,7 @@
   margin-bottom: 0.5rem;
 }
 .linkList li a {
-  color: var(--color-main-bg);
+  color: var(--color-forrest-green);
   font-family: var(--font-description);
   text-decoration: none;
   font-size: 1.1rem;
@@ -83,7 +84,7 @@
 }
 .linkList li a:hover {
   text-decoration: underline;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-darktractoa);
 }
 
 /* Footer Bottom */
@@ -93,7 +94,8 @@
   padding-top: 1rem;
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: var(--color-main-bg);
+  color: var(--color-forrest-green);
+  padding-bottom: 1rem;
 }
 
 /* Media Query for Larger Screens */

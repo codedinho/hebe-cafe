@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 function Contact() {
@@ -20,23 +21,21 @@ function Contact() {
             us.
           </div>
           <div className={styles.contactDetail}>
-          <div className={styles.contactDetailHighlighted}>
-              Email
+            <FaEnvelope className={styles.contactIcon} />
+            <div className={styles.contactDetailValue}>
+              contact@hebecafe.com
             </div>
-            <div className={styles.contactDetailValue}>| contact@hebecafe.com</div>          
           </div>
           <div className={styles.contactDetail}>
-            <div className={styles.contactDetailHighlighted}>
-              Phone
-            </div>
-            <div className={styles.contactDetailValue}>| 123-456-7890</div>
+            <FaPhoneAlt className={styles.contactIcon} />
+            <div className={styles.contactDetailValue}>123-456-7890</div>
           </div>
           <div className={styles.contactDetail}>
-          <div className={styles.contactDetailHighlighted}>
-              Address
+            <FaMapMarkerAlt className={styles.contactIcon} />
+            <div className={styles.contactDetailValue}>
+              Hebe Cafe, 258 Kingsland Road, London, E8 4DG
             </div>
-            <div className={styles.contactDetailValue}>| Hebe Cafe, 258 Kingsland Road, London, E8 4DG</div>          
-            </div>
+          </div>
         </div>
       </div>
     </div>

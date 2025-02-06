@@ -19,8 +19,8 @@
   right: 0;
   bottom: 0;
   pointer-events: none; /* so it doesn't interfere with interactions */
-  box-shadow: inset 25px 0 15px var(--color-main-bg),
-              inset -25px 0 15px var(--color-main-bg);
+  box-shadow: inset 25px -10px 10px var(--color-main-bg),
+              inset 25px 10px 10px var(--color-main-bg);
   z-index: 2; /* This should be greater than the z-index of children if needed */
 }
 

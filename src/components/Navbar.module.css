@@ -2,8 +2,8 @@
 .navbar {
   position: relative;
   /* Lively gradient background and subtle shadow */
-  background: var(--color-main-bg);
-  padding: 1rem 2rem;
+  background: var(--color-forrest-green);
+  padding: 2rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
   position: sticky;
@@ -35,7 +35,7 @@
 .navLink {
   text-decoration: none;
   font-size: 1rem;
-  color: var(--color-forrest-green);
+  color: var(--color-main-bg);
   transition: transform 0.3s, color 0.3s;
 }
 
