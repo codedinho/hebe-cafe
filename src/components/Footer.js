@@ -41,7 +41,7 @@ function Footer() {
         <div className={styles.logoSection}>
           {/* Update src to your actual logo path */}
           <img
-            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_main.svg"}
+            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_main.png"}
             alt="Hebe Cafe Logo"
             className={styles.logo}
           />        
