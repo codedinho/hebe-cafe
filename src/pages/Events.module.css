@@ -180,7 +180,6 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  
 }
 
 /* See More button styling for grid view */
@@ -228,6 +227,17 @@
     font-family: var(--font-secondary);
     color: var(--color-darktractoa);
     font-weight: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardDescription {
+    white-space: normal;     /* Allow wrapping */
+    overflow: visible;        /* Show overflow */
+    text-overflow: clip;      /* Remove ellipsis */
+  }
+  .imageContainer {
+    margin-top: 1.5rem;
   }
 }
 

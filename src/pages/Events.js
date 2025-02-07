@@ -31,7 +31,7 @@ function Events() {
   // Combine upcoming events first, then past events at the bottom
   const sortedEvents = [...upcomingEvents, ...pastEvents];
 
-  // Pagination: show a block of posts at a time
+  // Pagination: show a block of posts at a time (for non-mobile)
   const POSTS_PER_PAGE = 6;
   const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
@@ -43,6 +43,26 @@ function Events() {
   const [isLoading, setIsLoading] = useState(false);
   const loadMoreRef = useRef(null);
 
+  // Detect mobile devices (using 768px as breakpoint)
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Force grid view and show all posts on mobile:
+  useEffect(() => {
+    if (isMobile) {
+      setViewMode("grid");
+      // Show all events (so posts aren't clipped)
+      setVisibleCount(sortedEvents.length);
+    }
+  }, [isMobile, sortedEvents]);
+
   // When view mode changes (or on page load), re-trigger the animation
   useEffect(() => {
     setAnimate(false);
@@ -52,8 +72,9 @@ function Events() {
     return () => clearTimeout(timer);
   }, [viewMode]);
 
-  // Setup infinite scroll with an IntersectionObserver
+  // Setup infinite scroll with an IntersectionObserver (only on non-mobile)
   useEffect(() => {
+    if (isMobile) return;
     if (!loadMoreRef.current) return;
     const observer = new IntersectionObserver(
       (entries) => {
@@ -79,9 +100,10 @@ function Events() {
     return () => {
       observer.disconnect();
     };
-  }, [visibleCount, isLoading, sortedEvents]);
+  }, [visibleCount, isLoading, sortedEvents, isMobile]);
 
   // Handler for "See More" which switches to big view and scrolls to the specified post
+  // (this will only work on non-mobile, since mobile always shows grid view)
   const handleSeeMore = (eventId) => {
     setViewMode("big");
     setTimeout(() => {
@@ -123,22 +145,25 @@ function Events() {
           Experience an unforgettable blend of live music, tasting events, and
           private hire celebrations.
         </p>
-        <div className={styles.viewToggleContainer}>
-          <button
-            className={`${styles.viewToggleIcon} ${viewMode === "grid" ? styles.activeToggle : ""}`}
-            onClick={() => setViewMode("grid")}
-            title="Grid View"
-          >
-            <FaTh />
-          </button>
-          <button
-            className={`${styles.viewToggleIcon} ${viewMode === "big" ? styles.activeToggle : ""}`}
-            onClick={() => setViewMode("big")}
-            title="Card View"
-          >
-            <FaList />
-          </button>
-        </div>
+        {/* Hide view toggle on mobile */}
+        {!isMobile && (
+          <div className={styles.viewToggleContainer}>
+            <button
+              className={`${styles.viewToggleIcon} ${viewMode === "grid" ? styles.activeToggle : ""}`}
+              onClick={() => setViewMode("grid")}
+              title="Grid View"
+            >
+              <FaTh />
+            </button>
+            <button
+              className={`${styles.viewToggleIcon} ${viewMode === "big" ? styles.activeToggle : ""}`}
+              onClick={() => setViewMode("big")}
+              title="Card View"
+            >
+              <FaList />
+            </button>
+          </div>
+        )}
       </header>
       <div className={`${styles.eventsContainer} ${viewMode === "big" ? styles.bigView : ""}`}>
         {sortedEvents.slice(0, visibleCount).map((event, index) => {
@@ -186,17 +211,20 @@ function Events() {
                   <h2 className={styles.cardHeader}>{event.header}</h2>
                   <p className={styles.cardDate}>{eventDate.toLocaleDateString()}</p>
                   <p className={styles.cardDescription}>{event.description}</p>
-                  <button
-                    className={styles.seeMoreButton}
-                    onClick={() => handleSeeMore(event.id)}
-                  >
-                    See More
-                  </button>
+                  {/* Hide "See More" button on mobile */}
+                  {!isMobile && (
+                    <button
+                      className={styles.seeMoreButton}
+                      onClick={() => handleSeeMore(event.id)}
+                    >
+                      See More
+                    </button>
+                  )}
                 </div>
               </div>
             );
           } else {
-            // Big view: Show full-width image with details printed below the image
+            // Big view (only available on non-mobile)
             return (
               <div
                 id={`event-${event.id}`}
@@ -237,7 +265,8 @@ function Events() {
           }
         })}
       </div>
-      {visibleCount < sortedEvents.length && (
+      {/* Render infinite scroll loadMore container only on non-mobile */}
+      {!isMobile && visibleCount < sortedEvents.length && (
         <div ref={loadMoreRef} className={styles.loadMoreContainer}>
           {isLoading && <FaSpinner className={styles.spinner} />}
         </div>
