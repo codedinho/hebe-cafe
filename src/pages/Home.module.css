@@ -66,17 +66,6 @@
 
 }
 
-.scrollDown {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  /* Removing the bounce animation for a cleaner, controlled hover effect */
-}
-
 .arrowIcon {
   display: block;
   width: 60px;

@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 24px;
+  height: 30px;
   width: 30px;
   padding: 0;
 }
@@ -126,8 +126,8 @@
 
 .closeButton {
   position: absolute;
-  top: 45px;
-  right: 56px;
+  top: 40px;
+  right: 55px;
   background: none;
   border: none;
   font-size: 2.5rem;

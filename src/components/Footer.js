@@ -17,7 +17,7 @@ function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logoSection}>
           <img
-            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Main.png"}
+            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Main.svg"}
             alt="Hebe Cafe Logo"
             className={styles.logo}
           />        
