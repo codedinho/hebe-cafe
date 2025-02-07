@@ -1,22 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import styles from "./Home.module.css";
-import About from "../components/About";
 
 function Home() {
-  const aboutRef = useRef(null);
-
-  const scrollToAbout = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  useEffect(() => {
-    if (window.location.hash === "#about" && aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
-
   return (
     <div className={styles.home}>
       <div
@@ -30,7 +15,7 @@ function Home() {
           src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg"}
           alt="Hebe Cafe Logo"
         />
-        <button onClick={scrollToAbout} className={styles.scrollDown}>
+        <button className={styles.scrollDown}>
           <svg
             width="40"
             height="40"
@@ -48,10 +33,6 @@ function Home() {
             />
           </svg>
         </button>
-      </div>
-      <div className={styles.spacer}></div>
-      <div ref={aboutRef}>
-        <About />
       </div>
     </div>
   );

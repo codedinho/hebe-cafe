@@ -1,90 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Classic Turkey Club",
-    "description": "Sliced turkey, bacon, lettuce, tomato, and mayo on toasted bread.",
-    "price": "$12.99",
-    "image": "/menu-images/turkey-club.jpg",
-    "menuType": "menu"
+    "name": "Salad of the Day",
+    "description": "Freshly prepared greens with a zesty house dressing.",
+    "price": "$9.99",
+    "image": "/menu-images/salad-of-the-day.jpg"
   },
   {
     "id": 2,
-    "name": "Veggie Delight",
-    "description": "Fresh seasonal vegetables with an avocado spread on multigrain bread.",
-    "price": "$10.99",
-    "image": "/menu-images/veggie-delight.jpg",
-    "menuType": "menu"
+    "name": "Soup of the Day",
+    "description": "Enjoy our chef's selection of a comforting soup made with seasonal ingredients.",
+    "price": "£7.99",
+    "image": "/menu-images/soup-of-the-day.jpg"
   },
   {
     "id": 3,
-    "name": "Ham & Cheese Special",
-    "description": "Premium ham with melted cheese and a mustard sauce on a baguette.",
-    "price": "$11.99",
-    "image": "/menu-images/ham-cheese.jpg",
-    "menuType": "menu"
+    "name": "Sandwich 1",
+    "description": "A delightful sandwich featuring premium deli meats and fresh vegetables.",
+    "price": "£8.99",
+    "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
-    "name": "Chicken Caesar Wrap",
-    "description": "Grilled chicken, romaine lettuce, parmesan cheese, and Caesar dressing wrapped in a tortilla.",
-    "price": "$9.99",
-    "image": "/menu-images/chicken-caesar-wrap.jpg",
-    "menuType": "menu"
+    "name": "Sandwich 2",
+    "description": "A unique combination of flavors in a hearty sandwich option.",
+    "price": "£8.99",
+    "image": "/menu-images/sandwich2.jpg"
   },
   {
     "id": 5,
-    "name": "Beef Burger Deluxe",
-    "description": "A juicy beef patty with cheddar, lettuce, tomato, and special sauce on a brioche bun.",
-    "price": "$13.99",
-    "image": "/menu-images/beef-burger.jpg",
-    "menuType": "menu"
+    "name": "Sandwich 3",
+    "description": "A classic favorite with turkey, cheese, and a tangy sauce.",
+    "price": "£8.99",
+    "image": "/menu-images/sandwich3.jpg"
   },
   {
     "id": 6,
-    "name": "Mediterranean Falafel",
-    "description": "Crispy falafel balls with hummus, tabbouleh, and tahini sauce in pita bread.",
-    "price": "$8.99",
-    "image": "/menu-images/falafel.jpg",
-    "menuType": "menu"
-  },
-  {
-    "id": 7,
-    "name": "Grilled Cheese Supreme",
-    "description": "Melted cheddar and mozzarella between buttery grilled sourdough bread.",
-    "price": "$7.99",
-    "image": "/menu-images/grilled-cheese.jpg",
-    "menuType": "menu"
-  },
-  {
-    "id": 8,
-    "name": "Spicy Tuna Roll",
-    "description": "Fresh tuna, spicy mayo, and cucumber wrapped in seasoned sushi rice and seaweed.",
-    "price": "$14.99",
-    "image": "/menu-images/spicy-tuna-roll.jpg",
-    "menuType": "menu"
-  },
-  {
-    "id": 9,
-    "name": "Signature Tomato Soup",
-    "description": "A warm, hearty tomato soup made from locally sourced tomatoes.",
-    "price": "$6.99",
-    "image": "/menu-images/tomato-soup.jpg",
-    "menuType": "weeklySpecials"
-  },
-  {
-    "id": 10,
-    "name": "Garlic Bread Supreme",
-    "description": "Oven-baked garlic bread with a crispy crust and soft interior, a classic favorite.",
-    "price": "$4.99",
-    "image": "/menu-images/garlic-bread.jpg",
-    "menuType": "weeklySpecials"
-  },
-  {
-    "id": 11,
-    "name": "House Salad",
-    "description": "Fresh garden salad with mixed greens and a choice of dressings.",
-    "price": "$5.99",
-    "image": "/menu-images/house-salad.jpg",
-    "menuType": "weeklySpecials"
+    "name": "Sandwich 4",
+    "description": "A vegetarian-friendly option loaded with fresh ingredients.",
+    "price": "£8.99",
+    "image": "/menu-images/sandwich4.jpg"
   }
 ] 

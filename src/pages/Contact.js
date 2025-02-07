@@ -8,7 +8,7 @@ function Contact() {
       <div className={styles.content}>
         <div className={styles.imageSection}>
           <img
-            src={process.env.PUBLIC_URL + "/images/location-photo.png"}
+            src={process.env.PUBLIC_URL + "/images/map-location-landscape.png"}
             alt="Our Location"
             className={styles.locationImage}
           />

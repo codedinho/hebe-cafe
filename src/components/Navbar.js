@@ -58,9 +58,14 @@ function Navbar() {
             )}
           </div>
           <div className={styles.menuOptions}>
-            <a href="#about" onClick={handleAboutClick} className={styles.navLink}>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `${styles.navLink} ${isActive ? styles.active : ""}`
+              }
+            >
               About
-            </a>
+            </NavLink>
             <NavLink
               to="/menu"
               className={({ isActive }) =>
@@ -115,9 +120,15 @@ function Navbar() {
             ✖
           </button>
           <div className={styles.mobileMenuLinks}>
-            <a href="#about" onClick={handleAboutClick} className={styles.mobileNavLink}>
+            <NavLink
+              to="/about"
+              onClick={toggleMobileMenu}
+              className={({ isActive }) =>
+                `${styles.mobileNavLink} ${isActive ? styles.active : ""}`
+              }
+            >
               About
-            </a>
+            </NavLink>
             <NavLink
               to="/menu"
               onClick={toggleMobileMenu}

@@ -12,29 +12,6 @@ function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Updated About click handler: scrolls to #about if on home
-  // Otherwise navigates to home, then scrolls to #about, plus scrolls to top.
-  const handleAboutClick = (e) => {
-    e.preventDefault();
-    if (location.pathname !== "/") {
-      navigate("/");
-      // Wait for the home page to mount before scrolling.
-      setTimeout(() => {
-        const aboutSection = document.getElementById("about");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-    } else {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-    // Scroll to top of the page after navigating
-    scrollToTop();
-  };
-
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
@@ -76,7 +53,7 @@ function Footer() {
           <h3 className={styles.linksHeader}>Quick Links</h3>
           <ul className={styles.linkList}>
             <li>
-              <Link to="/about" onClick={handleAboutClick}>About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
               <Link to="/menu" onClick={scrollToTop}>Menu</Link>

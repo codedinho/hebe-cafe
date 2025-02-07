@@ -11,11 +11,10 @@ function About() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Optionally, unobserve after the element becomes visible
           observer.unobserve(sectionRef.current);
         }
       },
-      { threshold: 0.5 } // Adjust threshold if needed.
+      { threshold: 0.5 }
     );
 
     if (sectionRef.current) {
@@ -30,25 +29,20 @@ function About() {
   }, []);
 
   return (
-    <div
-      id="about"
-      ref={sectionRef}
-      className={`${styles.about} ${isVisible ? styles.visible : ""}`}
-    >
+    <div id="about" ref={sectionRef} className={`${styles.about} ${isVisible ? styles.visible : ""}`}>
       <div className={styles.aboutImageContainer}>
         <img
           src={process.env.PUBLIC_URL + "/images/about-me-stock-image.jpg"}
-          alt="About Me"
+          alt="About Hebe Cafe"
           className={styles.aboutImage}
         />
         <div className={styles.aboutTextContainer}>
           <div className={styles.aboutHeader}>About Hebe Cafe</div>
           <div className={styles.aboutSubHeader}>Est. 2025</div>
-
           <p className={styles.aboutDescription}>
             Welcome to Hebe Café, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.
             <br />
-            Whether you're grabbing coffee, pint, savoring fresh dishes, or meeting friends, Hebe Café is where community and taste come together.
+            Whether you're grabbing coffee, enjoying a pint, savoring fresh dishes, or meeting friends, Hebe Café is where community and taste come together.
           </p>
           <div className={styles.reviewContainer}>
             <div className={styles.review}>

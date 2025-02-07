@@ -2,49 +2,37 @@
     {
       "id": 1,
       "header": "Live Music Night",
-      "date": "2025-02-07T19:30:00",
       "image": "/events-images/event-1.jpg",
-      "description": "Enjoy an unforgettable evening of live music with performances by local bands. Let the soulful tunes elevate your spirits at Hebe Cafe.",
-      "ticketsUrl": ""
+      "date": "2025-02-23T16:00:00"
     },
     {
       "id": 2,
       "header": "Gourmet Sandwich Tasting",
-      "date": "2025-02-09T19:30:00",
       "image": "/events-images/event-2.png",
-      "description": "Savor the flavor of freshly crafted sandwiches with unique ingredients curated by top local chefs. Share your favorite combo with friends!",
-      "ticketsUrl": "https://www.example.com/tickets/gourmet-sandwich-tasting"
+      "date": "2025-02-24T18:00:00"
     },
     {
       "id": 3,
       "header": "Artisanal Coffee Workshop",
-      "date": "2025-02-05T15:00:00",
       "image": "/events-images/event-3.png",
-      "description": "Join us for a delightful coffee brewing workshop where you'll learn the art of extracting the perfect cup from our signature blends.",
-      "ticketsUrl": "https://www.example.com/tickets/coffee-workshop"
+      "date": "2025-03-01T14:00:00"
     },
     {
       "id": 4,
       "header": "Local Artists Exhibition",
-      "date": "2025-02-12T17:00:00",
       "image": "/events-images/event-4.png",
-      "description": "Experience the vibrant local art scene at Hebe Cafe showcasing masterpieces created by emerging artists. A feast for the eyes and soul.",
-      "ticketsUrl": "https://www.example.com/tickets/artists-exhibition"
+      "date": "2025-03-05T17:30:00"
     },
     {
       "id": 5,
       "header": "Vinyl Record Swap & Sale",
-      "date": "2025-02-23T16:00:00",
       "image": "/events-images/event-5.jpg",
-      "description": "For music enthusiasts – swap and find rare vinyl records in our exclusive marketplace. Enjoy the nostalgia of analog sound.",
-      "ticketsUrl": "https://www.example.com/tickets/vinyl-swap"
+      "date": "2025-03-10T12:00:00"
     },
     {
       "id": 6,
       "header": "Jazz & Blues Evening",
-      "date": "2025-04-07T20:00:00",
       "image": "/events-images/event-6.jpg",
-      "description": "Immerse yourself in a night of smooth jazz and blues tunes, setting the perfect vibe for a relaxing evening at Hebe Cafe.",
-      "ticketsUrl": "https://www.example.com/tickets/jazz-evening"
+      "date": "2025-03-15T20:00:00"
     }
   ]
