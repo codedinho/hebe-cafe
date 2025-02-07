@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "header": "Live Music Night",
+      "image": "/events-images/event-1.jpg",
+      "date": "2025-02-23T16:00:00"
+    },
+    {
+      "id": 2,
+      "header": "Gourmet Sandwich Tasting",
+      "image": "/events-images/event-2.png",
+      "date": "2025-02-24T18:00:00"
+    },
+    {
+      "id": 3,
+      "header": "Artisanal Coffee Workshop",
+      "image": "/events-images/event-3.png",
+      "date": "2025-03-01T14:00:00"
+    },
+    {
+      "id": 4,
+      "header": "Local Artists Exhibition",
+      "image": "/events-images/event-4.png",
+      "date": "2025-03-05T17:30:00"
+    },
+    {
+      "id": 5,
+      "header": "Vinyl Record Swap & Sale",
+      "image": "/events-images/event-5.jpg",
+      "date": "2025-03-10T12:00:00"
+    },
+    {
+      "id": 6,
+      "header": "Jazz & Blues Evening",
+      "image": "/events-images/event-6.jpg",
+      "date": "2025-03-15T20:00:00"
+    }
+  ]
