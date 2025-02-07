@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://codedinho.github.io/hebe-cafe/static/css/main.aadb8bcd.css",
-    "main.js": "https://codedinho.github.io/hebe-cafe/static/js/main.240d8aed.js",
+    "main.css": "https://codedinho.github.io/hebe-cafe/static/css/main.6ddbd1bb.css",
+    "main.js": "https://codedinho.github.io/hebe-cafe/static/js/main.5169d9ec.js",
     "static/media/Piepie-W01-Regular.otf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
     "static/media/Piepie-W01-Regular.ttf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
     "static/media/copperplate-cc.heavy.otf": "https://codedinho.github.io/hebe-cafe/static/media/copperplate-cc.heavy.9c25d5dc0cf2028c027d.otf",
     "static/media/copperplate-cc.bold.otf": "https://codedinho.github.io/hebe-cafe/static/media/copperplate-cc.bold.48559696f0b224f41cb3.otf",
     "index.html": "https://codedinho.github.io/hebe-cafe/index.html",
-    "main.aadb8bcd.css.map": "https://codedinho.github.io/hebe-cafe/static/css/main.aadb8bcd.css.map",
-    "main.240d8aed.js.map": "https://codedinho.github.io/hebe-cafe/static/js/main.240d8aed.js.map"
+    "main.6ddbd1bb.css.map": "https://codedinho.github.io/hebe-cafe/static/css/main.6ddbd1bb.css.map",
+    "main.5169d9ec.js.map": "https://codedinho.github.io/hebe-cafe/static/js/main.5169d9ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.aadb8bcd.css",
-    "static/js/main.240d8aed.js"
+    "static/css/main.6ddbd1bb.css",
+    "static/js/main.5169d9ec.js"
   ]
 }
