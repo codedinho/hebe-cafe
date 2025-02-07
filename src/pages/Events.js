@@ -1,8 +1,15 @@
-import React from "react";
-import eventsData from "../data/events.json";
+import React, { useEffect, useState } from "react";
 import styles from "./Events.module.css";
 
 function Events() {
+  const [eventsData, setEventsData] = useState([]);
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + "/data/events.json")
+      .then((response) => response.json())
+      .then((data) => setEventsData(data));
+  }, []);
+
   return (
     <div className={styles.eventsWrapper}>
       <header className={styles.eventsHeader}>

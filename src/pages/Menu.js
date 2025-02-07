@@ -1,8 +1,22 @@
-import React from "react";
-import menuItems from "../data/menu-items.json";
+import React, { useState, useEffect } from "react";
 import styles from "./Menu.module.css";
 
 function Menu() {
+  const [menuItems, setMenuItems] = useState([]);
+
+  useEffect(() => {
+    // Fetch the JSON file from the public folder at runtime
+    fetch(process.env.PUBLIC_URL + "/data/menu-items.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch menu items");
+        }
+        return response.json();
+      })
+      .then((data) => setMenuItems(data))
+      .catch((error) => console.error("Error fetching menu items:", error));
+  }, []);
+
   return (
     <div className={`${styles.menuWrapper} ${styles.animateIn}`}>
       <header className={styles.menuHeader}>
