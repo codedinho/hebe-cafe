@@ -38,10 +38,10 @@ function About() {
               className={styles.aboutImage}
             />
             <div className={styles.aboutTextContainer}>
-              <div className={styles.aboutHeader}>About Hebe Cafe</div>
+              <div className={styles.aboutHeader}>Hebe Café Bar</div>
               <div className={styles.aboutSubHeader}>Est. 2025</div>
               <p className={styles.aboutDescription}>
-                Welcome to Hebe Café, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.
+                Welcome to Hebe Café Bar, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.
                 <br />
                 Whether you're grabbing coffee, enjoying a pint, savoring fresh dishes, or meeting friends, Hebe Café is where community and taste come together.
               </p>

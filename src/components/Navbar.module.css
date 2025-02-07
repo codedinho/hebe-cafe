@@ -4,7 +4,6 @@
   /* Lively gradient background and subtle shadow */
   background: var(--color-forrest-green);
   padding: 2rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
   position: sticky;
 }
@@ -62,8 +61,8 @@
 
 /* Contact number styling */
 .contactNumber {
-  font-size: 1rem;
-  color: var(--color-darktractoa);
+  font-size: 1.1rem;
+  color: var(--color-main-bg);
   font-weight: bold;
 }
 

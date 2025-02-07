@@ -1,6 +1,29 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./Events.module.css";
 import EventsBanner from "../components/EventsBanner";
+
+// Helper function to get ordinal suffix for a number
+function getOrdinal(n) {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
+// Function to format the ISO date string into a user-friendly string
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  const day = date.getDate();
+  const ordinalDay = getOrdinal(day);
+  const month = date.toLocaleString("default", { month: "long" });
+  const year = date.getFullYear();
+  let hours = date.getHours();
+  const minutes = date.getMinutes();
+  const period = hours >= 12 ? "pm" : "am";
+  hours = hours % 12 || 12;
+  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+  return `${ordinalDay} ${month} ${year}, ${hours}.${formattedMinutes}${period}`;
+}
+
 function Events() {
   const [eventsData, setEventsData] = useState([]);
   const [page, setPage] = useState(1);
@@ -54,7 +77,7 @@ function Events() {
     <div className={styles.animateIn}>
       <div className={styles.pageContent}>
         <header className={styles.eventsHeader}>
-          <h1 className={styles.title}>Hebe Cafe Events</h1>
+          <h1 className={styles.title}>Events & Private Hire</h1>
           <p className={styles.subtitle}>
             Experience an unforgettable blend of live music, gourmet tastes, and
             sophisticated settings expertly curated for every celebration. At Hebe Cafe,
@@ -71,6 +94,11 @@ function Events() {
                 alt={event.header}
                 className={styles.eventImage}
               />
+              <div className={styles.cardOverlay}>
+                <h3 className={styles.cardTitle}>{event.header}</h3>
+                <p className={styles.cardDescription}>{event.description}</p>
+                <p className={styles.cardDate}>{formatDate(event.date)}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -81,8 +109,6 @@ function Events() {
           {loading && <div className={styles.spinner}></div>}
         </div>
       </div>
-      <EventsBanner />
-
     </div>
   );
 }

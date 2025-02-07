@@ -23,10 +23,8 @@
   --color-footer-bg: #f0f0f0;
   --font-primary: 'Copperplate', serif;
   --font-secondary: 'PiePie Regular', sans-serif;
+  --font-tertiary: 'Playfair Display', serif;
   --font-description: 'Playfair Display', serif;
-
-  /* Events Banner */
-
 }
 
 body {

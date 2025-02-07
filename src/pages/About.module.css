@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   opacity: 1;
   transform: translateX(0);
   padding-top: 5rem;
@@ -96,8 +95,8 @@
   }
 
   .about {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .aboutTextContainer {

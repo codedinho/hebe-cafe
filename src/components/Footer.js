@@ -68,7 +68,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; {new Date().getFullYear()} Hebe Cafe. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Hebe Café Bar. All rights reserved.</p>
       </div>
     </footer>
   );

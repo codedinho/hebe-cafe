@@ -90,7 +90,7 @@ function Navbar() {
             >
               Contact
             </NavLink>
-            <span className={styles.contactNumber}>Call: (123) 456-7890</span>
+            <span className={styles.contactNumber}>(+44) 1234 567890</span>
           </div>
         </div>
 
