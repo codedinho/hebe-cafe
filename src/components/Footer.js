@@ -50,7 +50,7 @@ function Footer() {
           </div>
         </div>
         <div className={styles.linksSection}>
-          <h3 className={styles.linksHeader}>Quick Links</h3>
+          <h3 className={styles.linksHeader}>Our Links</h3>
           <ul className={styles.linkList}>
             <li>
               <Link to="/about">About</Link>

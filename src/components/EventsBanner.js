@@ -18,8 +18,24 @@ function EventsBanner() {
       .catch((error) => console.error("Error:", error));
   }, []);
 
+  // Only render if data is loaded
+  if (!eventsData.length) return null;
+
+  // Filter events to only include future events or those on today
+  const today = new Date();
+  // Create a date at midnight today, ensuring we compare only the date parts
+  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  
+  const upcomingEvents = eventsData.filter((event) => {
+    const eventDate = new Date(event.date);
+    return eventDate >= todayStart;
+  });
+
+  // If there are no upcoming events, don't render the banner
+  if (!upcomingEvents.length) return null;
+
   // Duplicate the events so that the banner loops seamlessly
-  const duplicatedEvents = [...eventsData, ...eventsData];
+  const duplicatedEvents = [...upcomingEvents, ...upcomingEvents];
 
   return (
     <div className={styles.bannerContainer}>

@@ -4,10 +4,10 @@
   overflow: hidden;
   background: var(--color-main-bg);
   display: flex;
-  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  margin-top: 2.5rem;
+  max-width: calc(100% - 2rem);
+  margin-bottom: 2rem;
 }
 
 /* Use a pseudo-element to create the inset shadow on top of the children */
@@ -27,9 +27,9 @@
 /* Scroller with a continuous slide animation */
 .scroller {
   display: flex;
-  gap: 1rem;
-  animation: scrollLinear 25s linear infinite;
-  will-change: transform;
+  /* This ensures that our duplicated list (2 copies) is arranged in a row */
+  width: fit-content;
+  animation: scrollLeft 40s linear infinite;
 }
 
 /* Each card is styled as a horizontal flex container with fixed dimensions */
@@ -73,7 +73,7 @@
   object-fit: cover;
   display: block;
   border-radius: 50%;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Details container that aligns content vertically on the right */
@@ -83,13 +83,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color-main-bg);
+  background: var(--color-main-bg-compliment);
   border-radius: 0 20px 20px 0;
   margin-left: -40px;
   padding-left: 60px;
   padding-right: 30px;
   overflow: hidden; /* Prevent overflowing content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Header styling with ellipsis if too long */
@@ -131,11 +131,13 @@
 }
 
 /* Keyframes for the continuous scrolling animation */
-@keyframes scrollLinear {
+@keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-30%);
+    /* Translate by exactly -50% of the scroller's width.
+       This assumes the card set repeats exactly after 50% */
+    transform: translateX(-50%);
   }
 }

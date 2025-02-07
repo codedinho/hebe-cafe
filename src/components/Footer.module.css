@@ -1,6 +1,6 @@
 .footerContainer {
-  background-color: #fdefd3;
-  color: var(--color-main-bg);
+  background-color: #fff9eb;
+  color: var(--color-main-bg-compliment);
   padding-top: 3rem;
   font-family: sans-serif;
 }

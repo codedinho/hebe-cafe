@@ -1,9 +1,9 @@
 .menuWrapper {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   padding-bottom: 5rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .menuHeader {
@@ -83,14 +83,14 @@
 }
 
 @media (max-width: 768px) {
-  .menuList {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
   .title {
     font-size: 2rem;
     font-family: var(--font-secondary);
     color: var(--color-darktractoa);
     font-weight: 100;
+  }
+  .menuWrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
