@@ -1,0 +1,40 @@
+{
+  "name": "Hebe Café Bar",
+  "address": {
+    "street": "258 Kingsland Road",
+    "city": "London",
+    "postcode": "E8 4DG"
+  },
+  "contact": {
+    "phone": "+44 1234 5678",
+    "email": "hello@hebecafe.com"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/hebecafe",
+    "facebook": "https://www.facebook.com/hebecafe"
+  },
+  "openingHours": {
+    "monday": {
+      "hours": "All day 12 – late"
+    },
+    "tuesday": {
+      "hours": "All day 12 – late"
+    },
+    "wednesday": {
+      "hours": "All day 12 – late"
+    },
+    "thursday": {
+      "hours": "All day 12 – late"
+    },
+    "friday": {
+      "hours": "All day 12 – late"
+    },
+    "saturday": {
+      "hours": "All day 12 – late"
+    },
+    "sunday": {
+      "hours": "Lunch 12 – 17:30"
+    },
+    "kitchenNote": "*kitchen closed 16 – 17:30 Monday to Saturday"
+  }
+}
