@@ -1,45 +1,29 @@
-import React, { useState } from "react";
-import { NavLink, Link, useNavigate, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  const [companyInfo, setCompanyInfo] = useState(null);
   const location = useLocation();
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/company-info.json`)
+      .then(response => response.json())
+      .then(data => setCompanyInfo(data))
+      .catch(error => console.error('Error loading company info:', error));
+  }, []);
 
   // Choose the appropriate logo based on the current route.
   const logoSrc =
     location.pathname === "/"
-      ? `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Oyster.png`
-      : `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Lockup_Horizontal_Oyster.png`;
-  const logoSrcSmall = `${process.env.PUBLIC_URL}/images/logo/Hebe_Brand_Assets_Logo_Red.png`
+      ? `${process.env.PUBLIC_URL}/images/logo/Hebe_Branding_Assets_Logo_Terracotta.png`
+      : `${process.env.PUBLIC_URL}/images/logo/Hebe_Branding_Assets_Logo_Terracotta.png`;
+  const logoSrcSmall = `${process.env.PUBLIC_URL}/images/logo/Hebe_Branding_Assets_Logo_Terracotta.png`
+  const logoSrcSmallWhite = `${process.env.PUBLIC_URL}/images/logo/Hebe_Branding_Assets_Logo_Oyster.png`
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
-  };
-
-  const handleAboutClick = (e) => {
-    e.preventDefault();
-    // If not on the home page, navigate there first
-    if (location.pathname !== "/") {
-      navigate("/");
-      // Give the home page a little time to mount
-      setTimeout(() => {
-        const aboutSection = document.getElementById("about");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-    } else {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-    // Close mobile menu after clicking (if open)
-    if (isMobileMenuOpen) {
-      toggleMobileMenu();
-    }
   };
 
   return (
@@ -90,7 +74,9 @@ function Navbar() {
             >
               Contact
             </NavLink>
-            <span className={styles.contactNumber}>(+44) 1234 567890</span>
+            <span className={styles.contactNumber}>
+              {companyInfo?.contact?.phone}
+            </span>
           </div>
         </div>
 
@@ -99,7 +85,7 @@ function Navbar() {
           <div className={styles.mobileLogo}>
             {location.pathname !== "/" ? (
               <Link to="/">
-                <img src={logoSrc} alt="Hebe Cafe Logo" className={styles.logoImgSmall} />
+                <img src={logoSrcSmall} alt="Hebe Cafe Logo" className={styles.logoImgSmall} />
               </Link>
             ) : (
               <div className={styles.placeholder}></div>
@@ -113,12 +99,16 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay (moved outside the main <nav>) */}
+      {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className={styles.mobileMenuOverlay}>
-          <button className={styles.closeButton} onClick={toggleMobileMenu}>
-            ✖
-          </button>
+          <div className={styles.mobileMenuHeader}>
+            <div></div>
+            <img src={logoSrcSmallWhite} alt="Hebe Cafe Logo" className={styles.mobileHeaderLogo} />
+            <button className={styles.closeButton} onClick={toggleMobileMenu}>
+              ✖
+            </button>
+          </div>
           <div className={styles.mobileMenuLinks}>
             <NavLink
               to="/about"
@@ -156,13 +146,9 @@ function Navbar() {
             >
               Contact
             </NavLink>
-            <div className={styles.logoContainer}>
-              <img src={logoSrcSmall} alt="Hebe Cafe Logo" className={styles.logoImgSmall} />
-
-              <span className={styles.contactNumberMobile}>
-                Call: (123) 456-7890
-              </span>
-            </div>
+            <span className={styles.contactNumberMobile}>
+              Call: {companyInfo?.contact?.phone}
+            </span>
           </div>
         </div>
       )}

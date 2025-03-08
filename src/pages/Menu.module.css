@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem 2rem;
   padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 .menuHeader {
@@ -14,13 +14,13 @@
 .title {
   font-size: 3rem;
   color: var(--color-darktractoa);
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: var(--color-forrest-green);
+  font-size: 1.1rem;
+  color: var(--color-charcoal);
   margin: 0;
 }
 
@@ -44,24 +44,25 @@
 }
 
 .itemName {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0 0 0.3rem 0;
-  color: var(--color-darktractoa);
-  font-weight: bold;
-  font-family: var(--font-description);
+  color: var(--color-charcoal);
+  font-weight: 600;
+  font-family: var(--font-primary);
 }
 
 .itemDescription {
   margin: 0;
   font-size: 1rem;
-  color: var(--color-forrest-green-damper);
-  font-style: italic;
+  color: var(--color-charcoal);
+  font-weight: 100;
+  opacity: 0.9;
 }
 
 .itemPrice {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: var(--color-darktractoa);
+  color: var(--color-charcoal);
   white-space: nowrap;
   margin-left: 1rem;
 }

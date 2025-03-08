@@ -12,7 +12,7 @@ function Home() {
       >
         <img
           className={styles.heroLogo}
-          src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Oyster.svg"}
+          src={process.env.PUBLIC_URL + "/images/logo/Hebe_Branding_Assets_Lockup_Oyster.png"}
           alt="Hebe Cafe Logo"
         />
       </div>

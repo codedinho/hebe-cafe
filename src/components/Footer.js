@@ -1,11 +1,24 @@
-import React from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 function Footer() {
-  const navigate = useNavigate();
-  const location = useLocation();
+  const [companyInfo, setCompanyInfo] = useState({
+    name: "",
+    address: { street: "", city: "", postcode: "" },
+    social: { instagram: "", facebook: "" }
+  });
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + '/data/company-info.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched company info:', data);
+        setCompanyInfo(data);
+      })
+      .catch(error => console.error('Error loading company info:', error));
+  }, []);
 
   // Helper to scroll to the top of the page smoothly
   const scrollToTop = () => {
@@ -17,7 +30,7 @@ function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logoSection}>
           <img
-            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Brand_Assets_Lockup_Stacked_Main.svg"}
+            src={process.env.PUBLIC_URL + "/images/logo/Hebe_Branding_Assets_Lockup_Main-02.png"}
             alt="Hebe Cafe Logo"
             className={styles.logo}
           />        
@@ -25,10 +38,10 @@ function Footer() {
         <div className={styles.infoSection}>
           <h3 className={styles.linksHeader}>Address</h3>
           <div className={styles.infoText}>
-            Hebe Cafe <br />
-            258 Kingsland Road,
-            London,
-            E8 4DG
+            {companyInfo.name}<br />
+            {companyInfo.address.street}<br />
+            {companyInfo.address.city}<br />
+            {companyInfo.address.postcode}
           </div>
           <div className={styles.socialMediaSection}>
             <a

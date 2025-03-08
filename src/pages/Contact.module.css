@@ -16,10 +16,10 @@
 
 .infoText {
   font-size: 1.1rem;
-  color: var(--color-forrest-green);
+  color: var(--color-charcoal);
   font-family: var(--font-description);
   font-weight: 100;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -40,7 +40,7 @@
   height: auto;
   object-fit: cover;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .infoSection {
@@ -54,7 +54,7 @@
 /* Updated contact detail styling */
 .contactDetail {
   font-size: 1.1rem;
-  color: var(--color-forrest-green);
+  color: var(--color-charcoal);
   font-family: var(--font-description);
   display: flex;
   flex-direction: row;
@@ -64,15 +64,14 @@
 
 /* New class for the icons */
 .contactIcon {
-  font-size: 1.5rem;
-  color: var(--color-forrest-green);
+  font-size: 1.3rem;
+  color: var(--color-charcoal);
   margin-right: 0.5rem;
 }
 
 .contactDetailValue {
   font-weight: 100;
-  font-size: 1.3rem;
-  font-style: italic;
+  font-size: 1.1rem;
 }
 
 /* Responsive styles */
@@ -119,4 +118,36 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.subHeader {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.openingHours {
+  margin-top: 1rem;
+}
+
+.dayBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.hours {
+  color: #666;
+}
+
+.note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
 } 

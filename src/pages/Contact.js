@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const [companyInfo, setCompanyInfo] = useState(null);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/company-info.json`)
+      .then(response => response.json())
+      .then(data => setCompanyInfo(data))
+      .catch(error => console.error('Error loading company info:', error));
+  }, []);
+
   return (
     <div className={`${styles.contactContainer} ${styles.animateIn}`}>
       <div className={styles.content}>
         <div className={styles.imageSection}>
           <img
-            src={process.env.PUBLIC_URL + "/images/map-location-landscape.png"}
+            src={process.env.PUBLIC_URL + "/images/Map_Location_Outdoor.png"}
             alt="Our Location"
             className={styles.locationImage}
           />
         </div>
         <div className={styles.infoSection}>
           <h1 className={styles.header}>
-            Contact Us!
+            Get In Touch
           </h1>
           <div className={styles.infoText}>
             If you have any questions or feedback, feel free to reach out to us.
@@ -23,17 +32,44 @@ function Contact() {
           <div className={styles.contactDetail}>
             <FaEnvelope className={styles.contactIcon} />
             <div className={styles.contactDetailValue}>
-              contact@hebecafe.com
+              {companyInfo?.contact?.email}
             </div>
           </div>
           <div className={styles.contactDetail}>
             <FaPhoneAlt className={styles.contactIcon} />
-            <div className={styles.contactDetailValue}>123-456-7890</div>
+            <div className={styles.contactDetailValue}>{companyInfo?.contact?.phone}</div>
           </div>
           <div className={styles.contactDetail}>
             <FaMapMarkerAlt className={styles.contactIcon} />
             <div className={styles.contactDetailValue}>
-              Hebe Cafe, 258 Kingsland Road, London, E8 4DG
+              {companyInfo?.name}, {companyInfo?.address?.street}, {companyInfo?.address?.city}, {companyInfo?.address?.postcode}
+            </div>
+          </div>
+          
+          <h2 className={styles.subHeader}>Opening Hours</h2>
+          <div className={styles.openingHours}>
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Monday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.monday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Tuesday & Wednesday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.tuesdayWednesday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Thursday to Saturday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.thursdayToSaturday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Sunday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.sunday?.hours}</span>
+            </div>
+            
+            <div className={styles.note}>
+              {companyInfo?.openingHours?.kitchenNote}
             </div>
           </div>
         </div>
