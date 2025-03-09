@@ -33,13 +33,13 @@ function Navbar() {
         {/* Desktop Navigation */}
         <div className={styles.desktopMenu}>
           <div className={styles.navbarLogo}>
-            {location.pathname !== "/" ? (
-              <Link to="/">
-                <img src={logoSrc} alt="Hebe Cafe Logo" className={styles.logoImg} />
-              </Link>
-            ) : (
-              <div className={styles.placeholder}></div>
-            )}
+            <Link to="/">
+              <img 
+                src={logoSrc} 
+                alt="Hebe Cafe Logo" 
+                className={`${styles.logoImg} ${location.pathname === "/" ? styles.invisible : ""}`} 
+              />
+            </Link>
           </div>
           <div className={styles.menuOptions}>
             <NavLink
@@ -83,15 +83,20 @@ function Navbar() {
         {/* Mobile Navigation Header */}
         <div className={styles.mobileHeader}>
           <div className={styles.mobileLogo}>
-            {location.pathname !== "/" ? (
-              <Link to="/">
-                <img src={logoSrcSmall} alt="Hebe Cafe Logo" className={styles.logoImgSmall} />
-              </Link>
-            ) : (
-              <div className={styles.placeholder}></div>
-            )}
+            <Link to="/">
+              <img 
+                src={logoSrcSmall} 
+                alt="Hebe Cafe Logo" 
+                className={`${styles.logoImgSmall} ${location.pathname === "/" ? styles.invisible : ""}`} 
+              />
+            </Link>
           </div>
-          <button className={styles.hamburger} onClick={toggleMobileMenu}>
+          <button 
+            className={styles.hamburger} 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+            aria-expanded={isMobileMenuOpen}
+          >
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>
             <span className={styles.bar}></span>

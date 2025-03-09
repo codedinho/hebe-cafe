@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./Events.module.css";
-import EventsBanner from "../components/EventsBanner";
 
 // Helper function to get ordinal suffix for a number
 function getOrdinal(n) {

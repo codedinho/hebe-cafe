@@ -235,3 +235,7 @@
   background-color: var(--color-charcoal) !important;
 }
 
+.invisible {
+  opacity: 0;
+}
+

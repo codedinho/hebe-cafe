@@ -7,19 +7,17 @@
 }
 
 .header {
-  font-size: 3rem;
-  font-family: var(--font-secondary);
+  font-size: 2.5rem;
   color: var(--color-darktractoa);
-  font-weight: 100;
-  margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 .infoText {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-charcoal);
   font-family: var(--font-description);
-  font-weight: 100;
   margin-bottom: 1rem;
+  opacity: 0.8;
 }
 
 .content {
@@ -53,13 +51,14 @@
 
 /* Updated contact detail styling */
 .contactDetail {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-charcoal);
   font-family: var(--font-description);
   display: flex;
   flex-direction: row;
   gap: 0.3rem;
   align-items: center;
+  opacity: 0.8;
 }
 
 /* New class for the icons */
@@ -71,7 +70,8 @@
 
 .contactDetailValue {
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 /* Responsive styles */
@@ -101,6 +101,16 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .dayBlock {
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .hours {
+    margin-left: 1rem;  /* Add some indentation for better readability */
+  }
 }
 
 /* -------------------- Animation Styles -------------------- */
@@ -122,8 +132,7 @@
 
 .subHeader {
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -139,10 +148,14 @@
 
 .day {
   font-weight: 500;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+  font-size: 1rem;
 }
 
 .hours {
-  color: #666;
+  color: var(--color-charcoal);
+  opacity: 0.8;
 }
 
 .note {

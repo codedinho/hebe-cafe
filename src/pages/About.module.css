@@ -34,10 +34,9 @@
 }
 
 .aboutHeader {
-  font-size: 3rem;
-  font-family: var(--font-secondary);
+  font-size: 2.5rem;
   color: var(--color-darktractoa);
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .aboutSubHeader {
@@ -46,12 +45,14 @@
   color: var(--color-charcoal);
   margin-bottom: 2rem;
   font-weight: 600;
+  opacity: 0.8;
 }
 
 .aboutDescription {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: var(--font-description);
   color: var(--color-charcoal);
+  opacity: 0.8;
 }
 
 .reviewContainer {
@@ -72,10 +73,11 @@
 
 .reviewText {
   margin-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-charcoal);
   font-family: var(--font-description);
   font-style: italic;
+  opacity: 0.8;
 }
 
 .reviewAuthor {

@@ -17,14 +17,23 @@
     "monday": {
       "hours": "All day 12 – late"
     },
-    "tuesdayWednesday": {
-      "hours": "CLOSED"
+    "tuesday": {
+      "hours": "All day 12 – late"
     },
-    "thursdayToSaturday": {
+    "wednesday": {
+      "hours": "All day 12 – late"
+    },
+    "thursday": {
+      "hours": "All day 12 – late"
+    },
+    "friday": {
+      "hours": "All day 12 – late"
+    },
+    "saturday": {
       "hours": "All day 12 – late"
     },
     "sunday": {
-      "hours": "Lunch 12 – 17:30 / bar open till late"
+      "hours": "Lunch 12 – 17:30"
     },
     "kitchenNote": "*kitchen closed 16 – 17:30 Monday to Saturday"
   }

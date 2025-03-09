@@ -6,23 +6,26 @@ function About() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Store the ref value in a variable inside the effect
+    const currentRef = sectionRef.current;
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(sectionRef.current);
+          observer.unobserve(currentRef);  // Use stored reference
         }
       },
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);  // Use stored reference
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {  // Use stored reference
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -38,7 +41,7 @@ function About() {
               className={styles.aboutImage}
             />
             <div className={styles.aboutTextContainer}>
-              <div className={styles.aboutHeader}>Hebe Café Bar</div>
+              <h1 className={styles.aboutHeader}>Hebe Café Bar</h1>
               <div className={styles.aboutSubHeader}>Est. 2025</div>
               <p className={styles.aboutDescription}>
                 Welcome to Hebe Café Bar, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.

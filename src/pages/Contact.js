@@ -54,13 +54,28 @@ function Contact() {
             </div>
             
             <div className={styles.dayBlock}>
-              <span className={styles.day}>Tuesday & Wednesday</span>
-              <span className={styles.hours}>{companyInfo?.openingHours?.tuesdayWednesday?.hours}</span>
+              <span className={styles.day}>Tuesday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.tuesday?.hours}</span>
             </div>
             
             <div className={styles.dayBlock}>
-              <span className={styles.day}>Thursday to Saturday</span>
-              <span className={styles.hours}>{companyInfo?.openingHours?.thursdayToSaturday?.hours}</span>
+              <span className={styles.day}>Wednesday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.wednesday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Thursday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.thursday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Friday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.friday?.hours}</span>
+            </div>
+            
+            <div className={styles.dayBlock}>
+              <span className={styles.day}>Saturday</span>
+              <span className={styles.hours}>{companyInfo?.openingHours?.saturday?.hours}</span>
             </div>
             
             <div className={styles.dayBlock}>

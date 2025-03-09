@@ -45,20 +45,24 @@ function Footer() {
           </div>
           <div className={styles.socialMediaSection}>
             <a
-              href="https://www.instagram.com"
+              href={companyInfo.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}
+              aria-label="Visit our Instagram page"
             >
               <FaInstagram />
+              <span className={styles.srOnly}></span>
             </a>
             <a
-              href="https://www.facebook.com"
+              href={companyInfo.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}
+              aria-label="Visit our Facebook page"
             >
               <FaFacebook />
+              <span className={styles.srOnly}></span>
             </a>
           </div>
         </div>
