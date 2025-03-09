@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://codedinho.github.io/hebe-cafe/static/css/main.444a731f.css",
-    "main.js": "https://codedinho.github.io/hebe-cafe/static/js/main.7f2cef82.js",
-    "static/media/GeistMono-Light.otf": "https://codedinho.github.io/hebe-cafe/static/media/GeistMono-Light.9b695e14ad9cd758cdb0.otf",
-    "static/media/GeistMono-Medium.otf": "https://codedinho.github.io/hebe-cafe/static/media/GeistMono-Medium.2dee48b8f9f47d4cb98d.otf",
-    "static/media/Piepie-W01-Regular.otf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
-    "static/media/Piepie-W01-Regular.ttf": "https://codedinho.github.io/hebe-cafe/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
-    "index.html": "https://codedinho.github.io/hebe-cafe/index.html",
-    "main.444a731f.css.map": "https://codedinho.github.io/hebe-cafe/static/css/main.444a731f.css.map",
-    "main.7f2cef82.js.map": "https://codedinho.github.io/hebe-cafe/static/js/main.7f2cef82.js.map"
+    "main.css": "https://cafehebe.com/static/css/main.aa41146d.css",
+    "main.js": "https://cafehebe.com/static/js/main.4e0b7f45.js",
+    "static/media/GeistMono-Light.otf": "https://cafehebe.com/static/media/GeistMono-Light.9b695e14ad9cd758cdb0.otf",
+    "static/media/GeistMono-Medium.otf": "https://cafehebe.com/static/media/GeistMono-Medium.2dee48b8f9f47d4cb98d.otf",
+    "static/media/Piepie-W01-Regular.otf": "https://cafehebe.com/static/media/Piepie-W01-Regular.b4c74090cdbc689f7bd9.otf",
+    "static/media/Piepie-W01-Regular.ttf": "https://cafehebe.com/static/media/Piepie-W01-Regular.d3d6c3d57546bbc1d191.ttf",
+    "index.html": "https://cafehebe.com/index.html",
+    "main.aa41146d.css.map": "https://cafehebe.com/static/css/main.aa41146d.css.map",
+    "main.4e0b7f45.js.map": "https://cafehebe.com/static/js/main.4e0b7f45.js.map"
   },
   "entrypoints": [
-    "static/css/main.444a731f.css",
-    "static/js/main.7f2cef82.js"
+    "static/css/main.aa41146d.css",
+    "static/js/main.4e0b7f45.js"
   ]
 }
