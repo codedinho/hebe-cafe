@@ -15,25 +15,25 @@
   },
   "openingHours": {
     "monday": {
-      "hours": "All day 12 – late"
+      "hours": "CLOSED"
     },
     "tuesday": {
-      "hours": "All day 12 – late"
+      "hours": "5pm - 11pm"
     },
     "wednesday": {
-      "hours": "All day 12 – late"
+      "hours": "8am - 11pm"
     },
     "thursday": {
-      "hours": "All day 12 – late"
+      "hours": "8am - 11pm"
     },
     "friday": {
-      "hours": "All day 12 – late"
+      "hours": "8am - 12pm"
     },
     "saturday": {
-      "hours": "All day 12 – late"
+      "hours": "9am - 12pm"
     },
     "sunday": {
-      "hours": "Lunch 12 – 17:30"
+      "hours": "9am - 5pm"
     },
     "kitchenNote": "*kitchen closed 16 – 17:30 Monday to Saturday"
   }
