@@ -11,7 +11,7 @@ function Home() {
       <div
         className={styles.hero}
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/cafe-stock-image.jpg)`,
+          backgroundColor: 'var(--color-darktractoa)'
         }}
       >
         <img
