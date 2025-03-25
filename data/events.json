@@ -1,9 +1,9 @@
 [
     {
       "id": 1,
-      "header": "Live Music Night",
-      "image": "/data/events-images/event-1.jpg",
-      "date": "2025-02-23T16:00:00"
+      "header": "Live Music Night 1",
+      "image": "/data/events-images/test-design.png",
+      "date": "2025-04-03T20:00:00"
     },
     {
       "id": 2,
