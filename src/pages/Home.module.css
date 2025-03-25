@@ -3,7 +3,7 @@
 }
 
 .hero {
-  background: var(--color-main-bg);
+  background-color: var(--color-darktractoa);
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -34,7 +34,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.20);
   z-index: -1;
 }
 

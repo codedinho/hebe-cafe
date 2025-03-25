@@ -10,9 +10,6 @@ function Home() {
     <div className={styles.home}>
       <div
         className={styles.hero}
-        style={{
-          backgroundColor: 'var(--color-darktractoa)'
-        }}
       >
         <img
           className={styles.heroLogo}
