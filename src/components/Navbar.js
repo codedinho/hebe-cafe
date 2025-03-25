@@ -107,7 +107,7 @@ function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className={styles.mobileMenuOverlay}>
+        <div className={`${styles.mobileMenuOverlay} ${location.pathname === "/" ? styles.transparentOverlay : ""}`}>
           <div className={styles.mobileMenuHeader}>
             <div></div>
             <img src={logoSrcSmallWhite} alt="Hebe Cafe Logo" className={styles.mobileHeaderLogo} />

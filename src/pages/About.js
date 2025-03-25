@@ -46,7 +46,7 @@ function About() {
         <div id="about" ref={sectionRef} className={`${styles.about} ${isVisible ? styles.visible : ""}`}>
           <div className={styles.aboutImageContainer}>
             <img
-              src={process.env.PUBLIC_URL + "/images/about-me-stock-image.jpg"}
+              src={process.env.PUBLIC_URL + "/images/cafe-hebe-about-image.jpg"}
               alt="About Hebe Cafe"
               className={styles.aboutImage}
             />
