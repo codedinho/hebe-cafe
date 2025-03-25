@@ -2,73 +2,8 @@
     {
       "id": 1,
       "header": "Live Music Night 1",
-      "image": "/data/events-images/test-design.png",
+      "image": "/data/events-images/live-music-night.png",
       "date": "2025-04-03T20:00:00"
     },
-    {
-      "id": 2,
-      "header": "Gourmet Sandwich Tasting",
-      "image": "/data/events-images/event-2.png",
-      "date": "2025-02-24T18:00:00"
-    },
-    {
-      "id": 3,
-      "header": "Artisanal Coffee Workshop",
-      "image": "/data/events-images/event-3.png",
-      "date": "2025-03-01T14:00:00"
-    },
-    {
-      "id": 4,
-      "header": "Local Artists Exhibition",
-      "image": "/data/events-images/event-4.png",
-      "date": "2025-03-05T17:30:00"
-    },
-    {
-      "id": 5,
-      "header": "Vinyl Record Swap & Sale",
-      "image": "/data/events-images/event-5.jpg",
-      "date": "2025-03-10T12:00:00"
-    },
-    {
-      "id": 6,
-      "header": "Jazz & Blues Evening",
-      "image": "/data/events-images/event-6.jpg",
-      "date": "2025-03-15T20:00:00"
-    },
-    {
-      "id": 7,
-      "header": "Local Artists Exhibition",
-      "image": "/data/events-images/event-4.png",
-      "date": "2025-03-05T17:30:00"
-    },
-    {
-      "id": 8,
-      "header": "Vinyl Record Swap & Sale",
-      "image": "/data/events-images/event-5.jpg",
-      "date": "2025-03-10T12:00:00"
-    },
-    {
-      "id": 9,
-      "header": "Jazz & Blues Evening",
-      "image": "/data/events-images/event-6.jpg",
-      "date": "2025-03-15T20:00:00"
-    },
-    {
-      "id": 10,
-      "header": "Local Artists Exhibition",
-      "image": "/data/events-images/event-4.png",
-      "date": "2025-03-05T17:30:00"
-    },
-    {
-      "id": 11,
-      "header": "Vinyl Record Swap & Sale",
-      "image": "/data/events-images/event-5.jpg",
-      "date": "2025-03-10T12:00:00"
-    },
-    {
-      "id": 12,
-      "header": "Jazz & Blues Evening",
-      "image": "/data/events-images/event-6.jpg",
-      "date": "2025-03-15T20:00:00"
-    }
+    
   ]
