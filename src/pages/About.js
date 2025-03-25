@@ -1,9 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./About.module.css";
+import Loader from '../components/Loader';
+import { useMinimumLoadingTime } from '../hooks/useMinimumLoadingTime';
 
 function About() {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const isShowingLoader = useMinimumLoadingTime(loading);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   useEffect(() => {
     // Store the ref value in a variable inside the effect
@@ -30,6 +38,8 @@ function About() {
     };
   }, []);
 
+  if (isShowingLoader) return <Loader />;
+
   return (
     <div className={styles.animateIn}>
       <div className={styles.pageContent}>
@@ -41,7 +51,7 @@ function About() {
               className={styles.aboutImage}
             />
             <div className={styles.aboutTextContainer}>
-              <h1 className={styles.aboutHeader}>Hebe Café Bar</h1>
+              <h1 className={styles.aboutHeader}>Café Hebe</h1>
               <div className={styles.aboutSubHeader}>Est. 2025</div>
               <p className={styles.aboutDescription}>
                 Welcome to Hebe Café Bar, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.

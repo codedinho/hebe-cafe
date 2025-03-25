@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
+import Loader from '../components/Loader';
+import { useMinimumLoadingTime } from '../hooks/useMinimumLoadingTime';
 
 function Contact() {
   const [companyInfo, setCompanyInfo] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const isShowingLoader = useMinimumLoadingTime(loading);
 
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/data/company-info.json`)
       .then(response => response.json())
-      .then(data => setCompanyInfo(data))
-      .catch(error => console.error('Error loading company info:', error));
+      .then(data => {
+        setCompanyInfo(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading company info:', error);
+        setLoading(false);
+      });
   }, []);
+
+  if (isShowingLoader) return <Loader />;
 
   return (
     <div className={`${styles.contactContainer} ${styles.animateIn}`}>

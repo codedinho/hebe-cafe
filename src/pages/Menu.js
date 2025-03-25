@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Menu.module.css";
+import Loader from '../components/Loader';
+import { useMinimumLoadingTime } from '../hooks/useMinimumLoadingTime';
 
 function Menu() {
   const [menuItems, setMenuItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const isShowingLoader = useMinimumLoadingTime(loading);
 
   useEffect(() => {
-    // Fetch the JSON file from the public folder at runtime
     fetch(process.env.PUBLIC_URL + "/data/menu-items.json")
       .then((response) => {
         if (!response.ok) {
@@ -13,9 +16,14 @@ function Menu() {
         }
         return response.json();
       })
-      .then((data) => setMenuItems(data))
+      .then((data) => {
+        setMenuItems(data);
+        setLoading(false);
+      })
       .catch((error) => console.error("Error fetching menu items:", error));
   }, []);
+
+  if (isShowingLoader) return <Loader />;
 
   return (
     <div className={`${styles.menuWrapper} ${styles.animateIn}`}>

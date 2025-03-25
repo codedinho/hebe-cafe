@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -154,6 +155,28 @@ function Navbar() {
             <span className={styles.contactNumberMobile}>
               Call: {companyInfo?.contact?.phone}
             </span>
+            
+            {/* Add social media icons */}
+            <div className={styles.socialMediaSection}>
+              <a
+                href={companyInfo?.social?.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialIcon}
+                aria-label="Visit our Instagram page"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href={companyInfo?.social?.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialIcon}
+                aria-label="Visit our Facebook page"
+              >
+                <FaFacebook />
+              </a>
+            </div>
           </div>
         </div>
       )}

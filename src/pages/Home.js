@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
+import Loader from '../components/Loader';
+import { useMinimumLoadingTime } from '../hooks/useMinimumLoadingTime';
 
 function Home() {
+
+
   return (
     <div className={styles.home}>
       <div

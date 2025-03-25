@@ -1,5 +1,5 @@
 .footerContainer {
-  background-color: var(--color-main-bg-compliment);
+  background-color: var(--color-forrest-green);
   color: var(--color-main-bg-compliment);
   padding-top: 3rem;
   padding-left: 2rem;
@@ -35,7 +35,7 @@
 .infoText {
   font-family: var(--font-description);
   font-size: 1.1rem;
-  color: var(--color-forrest-green);
+  color: var(--color-main-bg);
   margin-bottom: 1rem;
   font-weight: 100;
 
@@ -49,7 +49,7 @@
 }
 
 .socialIcon {
-  color: var(--color-charcoal);
+  color: var(--color-main-bg);
   font-size: 2.5rem;
   transition: color 0.3s ease;
 }
@@ -65,11 +65,11 @@
 }
 .linksHeader {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-charcoal);
+  color: var(--color-main-bg);
 }
 .linkList {
   list-style: none;
@@ -80,7 +80,7 @@
   margin-bottom: 0.5rem;
 }
 .linkList li a {
-  color: var(--color-forrest-green);
+  color: var(--color-main-bg);
   font-family: var(--font-description);
   text-decoration: none;
   font-size: 1.1rem;

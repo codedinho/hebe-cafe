@@ -4,7 +4,6 @@
 .pageContent {
   padding: 2rem;
   padding-top: 1rem;
-  padding-bottom: 0;
 }
 
 .eventsWrapper {
@@ -37,6 +36,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.6rem;
+  margin-bottom: 3rem;
+
 }
 
 /* Each event card */
@@ -173,6 +174,10 @@
 @media (max-width: 600px) {
   .serviceIcon {
     font-size: 1.2rem;
+  }
+  /* Grid layout: 4 columns on desktop, 2 on mobile */
+  .eventsGrid {
+    margin-bottom: 0rem;
   }
 }
 
