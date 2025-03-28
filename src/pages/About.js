@@ -46,7 +46,7 @@ function About() {
         <div id="about" ref={sectionRef} className={`${styles.about} ${isVisible ? styles.visible : ""}`}>
           <div className={styles.aboutImageContainer}>
             <img
-              src={process.env.PUBLIC_URL + "/images/cafe-hebe-about-image.jpg"}
+              src={process.env.PUBLIC_URL + "/images/about-image-1.jpg"}
               alt="About Hebe Cafe"
               className={styles.aboutImage}
             />
@@ -54,18 +54,19 @@ function About() {
               <h1 className={styles.aboutHeader}>Café Hebe</h1>
               <div className={styles.aboutSubHeader}>Est. 2025</div>
               <p className={styles.aboutDescription}>
-                Welcome to Hebe Café Bar, London's best hotspot for quality atmosphere and great food. Nestled in the heart of the city, we're all about great flavors and warm smiles.
+                We are Cafe Hebe, Hebe was my family dog who was the goddess of all canines. The cafe/bar will encompass my home and hopefully, it will feel like your home as soon as you enter. Focussed on excellent coffee, delicious home-cooked food, flowing drinks, exciting events and an atmosphere you remember.
                 <br />
-                Whether you're grabbing coffee, enjoying a pint, savoring fresh dishes, or meeting friends, Hebe Café is where community and taste come together.
+                <br />
+                Pop down to get an idea of what I'm on about!
               </p>
-              <div className={styles.reviewContainer}>
+              {/* <div className={styles.reviewContainer}>
                 <div className={styles.review}>
                   <p className={styles.reviewText}>
                     "Hebe Café is the stop-in place in London, great vibe and unreal food! You can tell the team cares."
                   </p>
                   <div className={styles.reviewAuthor}>- David Hemsworth, London</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

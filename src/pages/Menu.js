@@ -29,9 +29,6 @@ function Menu() {
     <div className={`${styles.menuWrapper} ${styles.animateIn}`}>
       <header className={styles.menuHeader}>
         <h1 className={styles.title}>Today's Menu</h1>
-        <p className={styles.subtitle}>
-          Enjoy our selection for the day, featuring our Salad of the Day, Soup of the Day, and a variety of delicious sandwiches.
-        </p>
       </header>
       <ul className={styles.menuList}>
         {menuItems.map((item) => (

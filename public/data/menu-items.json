@@ -9,36 +9,36 @@
   {
     "id": 2,
     "name": "Soup of the Day",
-    "description": "Enjoy our chef's selection of a comforting soup made with seasonal ingredients.",
-    "price": "£7.99",
+    "description": "Not this week",
+    "price": "",
     "image": "/menu-images/soup-of-the-day.jpg"
   },
   {
     "id": 3,
-    "name": "Sandwich 1",
-    "description": "A delightful sandwich featuring premium deli meats and fresh vegetables.",
-    "price": "£8.99",
+    "name": "Toasted Ciabatta Sandwich",
+    "description": "Za’atar slow-roasted leg of lamb, confit garlic yoghurt, pickled red cabbage & herb salad",
+    "price": "£12",
     "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
-    "name": "Sandwich 2",
-    "description": "A unique combination of flavors in a hearty sandwich option.",
-    "price": "£8.99",
+    "name": "Toasted Ciabatta Sandwich",
+    "description": "Za’atar roasted broccoli, mint yoghurt, pickled red cabbage, toasted almonds & herb salad",
+    "price": "£10",
     "image": "/menu-images/sandwich2.jpg"
   },
   {
     "id": 5,
-    "name": "Sandwich 3",
-    "description": "A classic favorite with turkey, cheese, and a tangy sauce.",
-    "price": "£8.99",
+    "name": "Wrap of the week",
+    "description": "Pistachio chicken, balsamic white cabbage, pangrattato & basil",
+    "price": "£10",
     "image": "/menu-images/sandwich3.jpg"
   },
   {
     "id": 6,
-    "name": "Sandwich 4",
-    "description": "A vegetarian-friendly option loaded with fresh ingredients.",
-    "price": "£8.99",
+    "name": "Toastie",
+    "description": "Bacon & blue grilled cheese",
+    "price": "£10",
     "image": "/menu-images/sandwich4.jpg"
   }
 ] 

@@ -51,10 +51,7 @@ function Events() {
         <header className={styles.eventsHeader}>
           <h1 className={styles.title}>Events & Private Hire</h1>
           <p className={styles.subtitle}>
-            Experience an unforgettable blend of live music, gourmet tastes, and
-            sophisticated settings expertly curated for every celebration. At Hebe Cafe,
-            we design each event to create magical moments—from intimate tastings to vibrant
-            private hires—ensuring a harmonious fusion of ambiance, flavor, and melody.
+            Keep an eye out for all of our upcoming events. For private hire or if you want to put something on in the space, please contact us!
           </p>
           <hr className={styles.divider} />
         </header>
