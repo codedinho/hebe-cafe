@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Salad of the Day",
-    "description": "Edamame & radish black rice salad with a miso-sesame dressing",
+    "description": "Orzo salad with spring vegetables and a lemon & mint dressing (vg)",
     "price": "£8",
     "image": "/menu-images/salad-of-the-day.jpg"
   },
@@ -16,21 +16,21 @@
   {
     "id": 3,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Porchetta sandwich with fennel, pistachio, scotch bonnet jam, garlic aioli & smoked applewood",
+    "description": "Spring Lamb, wild garlic crushed peas, mustard mayo & a rosemary crumb",
     "price": "£12",
     "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Slow-roasted courgette sandwich with oregano, crispy onions, scotch bonnet jam, garlic aioli & salsa verde",
+    "description": "Asparagus, courgette, whipped goat’s cheese & a burnt onion chimichurri (v)",
     "price": "£10",
     "image": "/menu-images/sandwich2.jpg"
   },
   {
     "id": 5,
     "name": "Wrap of the week",
-    "description": "Sundried tomato chicken, Italian slaw & pangrattato",
+    "description": "Wild garlic chicken wrap with balsamic cabbage, parmesan & pangrattato",
     "price": "£10",
     "image": "/menu-images/sandwich3.jpg"
   },
