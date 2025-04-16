@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Salad of the Day",
-    "description": "Orzo salad with spring vegetables and a lemon & mint dressing (vg)",
-    "price": "£8",
+    "description": "Crispy rice salad with cucumber and edamame & a tahini and lemon dressing",
+    "price": "£9",
     "image": "/menu-images/salad-of-the-day.jpg"
   },
   {
@@ -16,21 +16,21 @@
   {
     "id": 3,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Spring Lamb, wild garlic crushed peas, mustard mayo & a rosemary crumb",
+    "description": "Slow-cooked south-Indian beef with green chutney, pickled & crispy onions & raita",
     "price": "£12",
     "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Asparagus, courgette, whipped goat’s cheese & a burnt onion chimichurri (v)",
+    "description": "Curried cauliflower, spiced mayo, crispy onions & green chutney (v)",
     "price": "£10",
     "image": "/menu-images/sandwich2.jpg"
   },
   {
     "id": 5,
     "name": "Wrap of the week",
-    "description": "Wild garlic chicken wrap with balsamic cabbage, parmesan & pangrattato",
+    "description": "Coronation chicken wrap with mango chutney, pickled onions & roasted cauliflower leaves",
     "price": "£10",
     "image": "/menu-images/sandwich3.jpg"
   },
