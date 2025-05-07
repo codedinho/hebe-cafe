@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Salad of the Day",
-    "description": "Crispy rice salad with cucumber and edamame & a tahini and lemon dressing",
+    "description": "Saffron giant cous cous with roasted red peppers & auberginne and a tahini dressing",
     "price": "£9",
     "image": "/menu-images/salad-of-the-day.jpg"
   },
@@ -16,29 +16,29 @@
   {
     "id": 3,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Slow-cooked south-Indian beef with green chutney, pickled & crispy onions & raita",
-    "price": "£12",
+    "description": "Bánh mì(ish) with Vietnamese pork shoulder, pickled radish & carrot, Pâté, Sriracha & Kewpie mayo",
+    "price": "£10",
     "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Curried cauliflower, spiced mayo, crispy onions & green chutney (v)",
+    "description": "Bánh mì(ish) with marinated tofu, pickled radish & carrot, Sriracha & Kewpie mayo (v)",
     "price": "£10",
     "image": "/menu-images/sandwich2.jpg"
   },
   {
     "id": 5,
     "name": "Wrap of the week",
-    "description": "Coronation chicken wrap with mango chutney, pickled onions & roasted cauliflower leaves",
+    "description": "Pistachio chicken wrap with smoked streaky bacon, balsamic white cabbage & Parmesan",
     "price": "£10",
     "image": "/menu-images/sandwich3.jpg"
   },
   {
     "id": 6,
     "name": "Toastie",
-    "description": "Bacon & blue grilled cheese",
-    "price": "£10",
+    "description": "Marinated courgette, Parmesan and mature cheddar grilled cheese",
+    "price": "£8",
     "image": "/menu-images/sandwich4.jpg"
   }
 ] 
