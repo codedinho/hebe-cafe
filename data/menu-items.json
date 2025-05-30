@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Salad of the Day",
-    "description": "Saffron giant cous cous with roasted red peppers & auberginne and a tahini dressing",
-    "price": "£9",
+    "description": "Not this week",
+    "price": "",
     "image": "/menu-images/salad-of-the-day.jpg"
   },
   {
@@ -16,14 +16,14 @@
   {
     "id": 3,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Bánh mì(ish) with Vietnamese pork shoulder, pickled radish & carrot, Pâté, Sriracha & Kewpie mayo",
+    "description": "Summer parm w/ fried chicken cutlet, pesto, courgette, lemon aioli, confit cherry tomatoes and hot honey",
     "price": "£10",
     "image": "/menu-images/sandwich1.jpg"
   },
   {
     "id": 4,
     "name": "Toasted Ciabatta Sandwich",
-    "description": "Bánh mì(ish) with marinated tofu, pickled radish & carrot, Sriracha & Kewpie mayo (v)",
+    "description": "Crispy aubergine parm w/ pesto, courgette, lemon aioli, confit cherry tomatoes and hot honey (v)",
     "price": "£10",
     "image": "/menu-images/sandwich2.jpg"
   },
